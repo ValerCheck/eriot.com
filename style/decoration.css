@@ -82,9 +82,8 @@ body {
 	vertical-align: super;
 	background-repeat: no-repeat;
 	color: #ffde2b;
-	font-size: 21px;
+	font-size: 16px;
 	float: right;
-	margin-top: 2px;
 }
 
 #title .content-wrapper {
@@ -105,9 +104,9 @@ body {
 }
 
 #title .content-wrapper section {
-	padding-top: 192px;
-	padding-left: 295px;
-	padding-right: 427px;
+	padding-top: 10.5322%;
+	padding-left: 16.1822%;
+	padding-right: 23.423%;
 }
 
 #top-block {
@@ -117,16 +116,22 @@ body {
 
 #title #top-block,
 #title #idea-title {
-	margin-right: 281px;
+	margin-right: 25.523%;
 }
 
 #idea-title {
 	color: white;
-	font-size: 72px;
+	font-size: 50px;
 	font-family: 'Roboto Condensed';
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-top: 40px;
+	white-space: pre-line;
+}
+
+#top-block img {
+	height: 20px;
+	width: 114px;
 }
 
 .mark-word {
@@ -171,4 +176,20 @@ body {
 	content: '';
 	display: block;
 	clear: both;
+}
+
+@media only screen  and (min-width : 1824px) {
+	#idea-title {
+		font-size: 72px;
+	}
+
+	.contacts-text {
+		font-size: 21px;
+		margin-top: 2px;
+	}
+
+	#top-block img {
+		height: 30px;
+		width: 171px;
+	}
 }
