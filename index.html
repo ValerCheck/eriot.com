@@ -1,117 +1,129 @@
 <!doctype html>
-<html>
+<html ng-app="eriotApp">
 
 <head>
 
 <title>Engineeriot</title>
 <meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="decoration.css"/>
-
+<link type="text/css" rel="stylesheet" href="./style/decoration.css"/>
+<script src="./js/angular.min.js"></script>
+<script src="./js/app.js"></script>
 </head>
+<body ng-view ng-controller='LandingController'>
+<section id="title" class="block">
 
-<section id="title">
-
-<!--MENU-->
-
-<!--ENDMENU-->
+	<nav class="asideMenu">
+		<img src="./images/menu-logo.png" class="menu-logo"/>
+		<div class="menu-block-title">
+			<span>{{menu[0].title}}</span>
+		</div>
+		<div class="asideMenuBurger"></div>
+	</nav>
 
 	<div class="content">
-		<div id="top-block">
-			<span>EngineeRiot</span>
-			<a href="#">Contact Us</a>
+
+		<div class="content-wrapper">
+
+			<section>
+				<div id="top-block" class="clear">
+					<img src="./images/text-logo.png" height="30px" width="171px"/>
+					<a class="contacts-text" href="#">Contact Us</a>
+				</div>
+
+				<h1 id="idea-title">Help turning your <span class='mark-word'>ideas</span>
+				Into real <span class='mark-word'>product</span> and
+				start production
+				</h1>
+
+				<div class='stat-info'>
+					<div class="stat-item">
+						<div>
+							<span>55</span>
+							<div class='vertical'>Products</div>
+						</div>
+						<p>
+							launched on the market with the help of our professionals 
+						</p>
+					</div>
+
+					<div class="stat-item">
+						<div>
+							<span>35</span>
+							<div class='vertical'>Engineers</div>
+						</div>
+						<p>
+							and consultants of different specializations in the team 
+						</p>
+					</div>
+
+					<div class="stat-item">
+						<div>
+							<span>5.7</span>
+							<div class='vertical'>Million</div>
+						</div>
+						<p>
+							copies of product reached the satisfied buyer 
+						</p>
+					</div>
+				</div>
+			</section>
+
+			
 		</div>
-
-		<h1 id="idea-title">Help turning your <span class='mark-word'>ideas<span>
-		Into real <span class='mark-word'>product</span> and
-		start production
-		</h1>
-
-		<div class='stat-info'>
-			<div class="stat-item">
-				<div>
-					<span>55</span>
-					<div class='vertical'>Products</div>
-				</div>
-				<p>
-					Lorem Ipsum is simply 
-					dummy text printing 
-					typesetting industry. 
-				</p>
-			</div>
-
-			<div class="stat-item">
-				<div>
-					<span>35</span>
-					<div class='vertical'>Engineers</div>
-				</div>
-				<p>
-					Lorem Ipsum is simply 
-					dummy text printing 
-					typesetting industry. 
-				</p>
-			</div>
-
-			<div class="stat-item">
-				<div>
-					<span>5.7</span>
-					<div class='vertical'>Million</div>
-				</div>
-				<p>
-					Lorem Ipsum is simply 
-					dummy text printing 
-					typesetting industry. 
-				</p>
-			</div>
-		</div>
-
 	</div>
 
 
 </section>
-<section id="services">
+<section id="services" class="block">
 
 <!--MENU-->
 
 <!--ENDMENU-->
 
+	<div class="section-title">Services</div>
+
+	<div id="step-description"></div>
+
+	<div id="services-steps">
+		
+	</div>
+
 </section>
-<section id="devices">
+<section id="devices" class="block">
 
 <!--MENU-->
 
 <!--ENDMENU-->
 	
 </section>
-<section id="expertise">
+<section id="expertise" class="block">
 	
 <!--MENU-->
 
 <!--ENDMENU-->
 
 </section>
-<section id="team">
+<section id="team" class="block">
 	
 <!--MENU-->
 
 <!--ENDMENU-->
 
 </section>
-<section id="awards-cases">
+<section id="awards-cases" class="block">
 	
 <!--MENU-->
 
 <!--ENDMENU-->
 
 </section>
-<section id="contacts">
+<section id="contacts" class="block">
 	
 <!--MENU-->
 
 <!--ENDMENU-->
 
 </section>
-
-<body>
 
 </body>
 
