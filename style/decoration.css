@@ -88,12 +88,18 @@ body {
 	float: right;
 }
 
+#title .content .background img {
+	vertical-align: top;
+	width: 100%;
+	opacity: 0;
+}
+
 #title .content .background {
 	position: absolute;
-	background-image: url('./../images/title-bg.png');
+	background: url('./../images/title-bg.png') 50%/100% no-repeat;
 	/*background-position: -5.003% 0;*/
 	/*height: 100%;*/
-	height: 1248px;
+	/*height: 1248px;*/
 	width: 100%;
 	z-index: -1;
 	/*margin: 0 0 0 96px;
