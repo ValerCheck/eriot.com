@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pre",
+				"pre-wrap"
+			],
+			[
 				"inlin",
 				"inline-block"
 			],
@@ -510,10 +514,6 @@
 			[
 				"t",
 				"type	Attr"
-			],
-			[
-				"player",
-				"playery"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2168,
+				"buffer_size": 2315,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "style/decoration.css",
 			"settings":
 			{
-				"buffer_size": 945,
+				"buffer_size": 3325,
 				"line_ending": "Windows"
 			}
 		}
@@ -845,6 +845,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"idea-title",
+			"top-block",
+			"idea-t",
+			"contacts-text",
+			"idea-title",
 			"'datauri",
 			"datauri",
 			"#block1, #block3",
@@ -967,12 +972,7 @@
 			"&shy;",
 			" в ",
 			" к ",
-			" и ",
-			" [а-я] ",
-			" [а-я]",
-			" [а-я] ",
-			"cost-plus-item",
-			"we-can-find"
+			" и "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1031,15 +1031,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2168,
+						"buffer_size": 2315,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								490,
-								490
+								932,
+								932
 							]
 						],
 						"settings":
@@ -1048,7 +1048,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
+						"translation.y": 257.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -1094,15 +1094,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 945,
+						"buffer_size": 3325,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								444,
-								444
+								2134,
+								2134
 							]
 						],
 						"settings":
@@ -1110,7 +1110,7 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 335.0,
+						"translation.y": 1533.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1147,7 +1147,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.558823529412,
 			1.0
 		],
 		"rows":
