@@ -3,22 +3,22 @@ var eriotApp = angular.module('eriotApp',[]);
 eriotApp.controller('LandingController',function($scope){
 
 	$scope.menu = [{
-		'title'	: 'Home',
+		'title'	: ['Home'],
 		'link'	: '#'
 	},{
-		'title'	: 'Services',
+		'title'	: ['Services'],
 		'link'	: '#', 
 	},{
-		'title'	: 'Expertise',
+		'title'	: ['Expertise'],
 		'link'	: '#'
 	},{
-		'title'	: 'Team',
+		'title'	: ['Team'],
 		'link'	: '#'
 	},{
-		'title'	: 'Awards/Cases',
+		'title'	: ['Awards/Cases'],
 		'link'	: '#'
 	},{
-		'title'	: 'Contacts',
+		'title'	: ['Contacts'],
 		'link'	: '#'
 	}];
 

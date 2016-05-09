@@ -12,12 +12,9 @@
 <body ng-view ng-controller='LandingController'>
 <section id="title" class="block">
 
-	<nav class="asideMenu">
-		<img src="./images/menu-logo.png" class="menu-logo"/>
-		<div class="menu-block-title">
-			<span>{{menu[0].title}}</span>
-		</div>
-		<div class="asideMenuBurger"></div>
+	<nav class="asideMenu" 
+		 ng-include="'./templates/asideMenu.html'"
+		 ng-repeat="title in menu[0].title">
 	</nav>
 
 	<div class="content">
@@ -74,7 +71,6 @@
 					</div>
 				</div>
 			</section>
-
 			
 		</div>
 	</div>
@@ -83,31 +79,78 @@
 </section>
 <section id="services" class="block">
 
-<!--MENU-->
+	<nav class="asideMenu" 
+		 ng-include="'./templates/asideMenu.html'"
+		 ng-repeat="title in menu[1].title">
+	</nav>
 
-<!--ENDMENU-->
+	<div class="content">
+		<div class="content-wrapper">
+			<section>
+				<div class="section-title">Services</div>
 
-	<div class="section-title">Services</div>
+				<div class="services-content">
+					
+					<div id="step-slider">
+						<div class="step">
+						<article>
+							<h4 class="services-step-header">What is inlucded to the package:</h4>
+							<p class="services-step-description">
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
+							</p>
+						</article>
+						<article>
+							<h4 class="services-step-header">What will you get as a result ?</h4>
+							<p class="services-step-description">
+								It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								<br/><br/>
+								There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+							</p>
+						</article>
+						</div>
+					</div>
+			
+					<div id="services-steps">
+						<ul class="steps-figures">
+							<li>
+								<span class="step-text"><span class="text-upper">Step 1</span></span>
+								<div class="step-back-color"></div>
+							</li>
+							<li>
+								<span class="step-text"><span class="text-upper">Step 2</span></span>
+								<div class="step-back-color"></div>
+							</li>
+							<li>
+								<span class="step-text"><span class="text-upper">Step 3</span></span>
+								<div class="step-back-color"></div>
+							</li>
+							<li>
+								<span class="step-text"><span class="text-upper">Step 4</span></span>
+								<div class="step-back-color"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
 
-	<div id="step-description"></div>
-
-	<div id="services-steps">
-		
+			</section>
+		</div>
 	</div>
 
 </section>
 <section id="devices" class="block">
 
-<!--MENU-->
-
-<!--ENDMENU-->
+	<!--<nav class="asideMenu" 
+		 ng-include="'./templates/asideMenu.html'"
+		 ng-repeat="title in menu[2].title">
+	</nav>-->
 	
 </section>
 <section id="expertise" class="block">
 	
-<!--MENU-->
-
-<!--ENDMENU-->
+	<!--<nav class="asideMenu" 
+		 ng-include="'./templates/asideMenu.html'"
+		 ng-repeat="title in menu[3].title">
+	</nav>-->
 
 </section>
 <section id="team" class="block">

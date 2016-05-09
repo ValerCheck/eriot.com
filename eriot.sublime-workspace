@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font-",
+				"font-family"
+			],
+			[
 				"pre",
 				"pre-wrap"
 			],
@@ -194,10 +198,6 @@
 			[
 				"b",
 				"background-color"
-			],
-			[
-				"font-",
-				"font-size"
 			],
 			[
 				"form_",
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2315,
+				"buffer_size": 2879,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "style/decoration.css",
 			"settings":
 			{
-				"buffer_size": 3325,
+				"buffer_size": 5319,
 				"line_ending": "Windows"
 			}
 		}
@@ -845,6 +845,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"position: abso",
+			"stat-item div",
+			"stat-item",
+			"mark-word",
+			"stat-item",
+			"vertical-align:",
+			"stat-item",
+			"vertical",
+			"section",
+			"#title",
 			"idea-title",
 			"top-block",
 			"idea-t",
@@ -962,17 +972,7 @@
 			"outstaff-reasons-list",
 			"s-li-1",
 			"s-li ",
-			"s-li",
-			"png",
-			"jpg",
-			"png",
-			".png",
-			"как ",
-			" и ",
-			"&shy;",
-			" в ",
-			" к ",
-			" и "
+			"s-li"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1031,27 +1031,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2315,
+						"buffer_size": 2879,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								932,
-								932
+								0,
+								48
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false,
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 257.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1079,7 +1080,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1094,26 +1096,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3325,
+						"buffer_size": 5319,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2134,
-								2134
+								891,
+								891
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1533.0,
+						"translation.y": 573.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1147,7 +1150,7 @@
 		"cols":
 		[
 			0.0,
-			0.558823529412,
+			0.579584775087,
 			1.0
 		],
 		"rows":
@@ -1199,7 +1202,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
