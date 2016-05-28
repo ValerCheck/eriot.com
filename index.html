@@ -6,8 +6,11 @@
 <title>Engineeriot</title>
 <meta charset="utf-8">
 <link type="text/css" rel="stylesheet" href="./style/decoration.css"/>
+<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+<script src="./js/jquery.js"></script>
 <script src="./js/angular.min.js"></script>
 <script src="./js/app.js"></script>
+<script type="text/javascript" src="./js/LandingController.js"></script>
 </head>
 <body ng-view ng-controller='LandingController'>
 <section id="title" class="block">
@@ -90,43 +93,70 @@
 				<div class="section-title">Services</div>
 
 				<div class="services-content">
-					
-					<div id="step-slider">
-						<div class="step">
-						<article>
-							<h4 class="services-step-header">What is inlucded to the package:</h4>
-							<p class="services-step-description">
-								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 
-							</p>
-						</article>
-						<article>
-							<h4 class="services-step-header">What will you get as a result ?</h4>
-							<p class="services-step-description">
-								It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-								<br/><br/>
-								There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
-							</p>
-						</article>
+					<div class="slider-wrapper">
+						<div id="step-slider" class="step-slider">
+							<div class="step" ng-repeat="step in steps" data-id="{{step.id}}">
+								<article ng-repeat="article in step.articles">
+									<h4 class="services-step-header">{{article.header}}</h4>
+									<p class="services-step-description">
+										<ul>
+											<li ng-repeat="item in article.description">
+												{{item}}
+											</li>
+										</ul>
+									</p>
+								</article>
+							</div>
+						</div>
+						<div class="float-area services-buttons">
+							<div class="services-prev">
+			  					<div class="button enable-transition">
+			  						<div class="arrow"></div>
+			  					</div>
+			  					<span class="label enable-transition">BACK</span>
+			  				</div>
+			  				<div class="services-next enable-transition">
+								<span class="label enable-transition">NEXT</span>
+								<div class="button enable-transition">
+									<div class="arrow"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 			
 					<div id="services-steps">
 						<ul class="steps-figures">
 							<li>
-								<span class="step-text"><span class="text-upper">Step 1</span></span>
-								<div class="step-back-color"></div>
+								<span class="step-text">
+									<span class="text-upper enable-transition">Step 1.</span>
+									WE EXAMINE THE IDEA AND HELP TO EVALUATE IT
+								</span>
+								<div class="step-color back"></div>
+								<div class="step-color front"></div>
 							</li>
 							<li>
-								<span class="step-text"><span class="text-upper">Step 2</span></span>
-								<div class="step-back-color"></div>
+								<span class="step-text">
+									<span class="text-upper enable-transition">Step 2.</span>
+									EXPLORE THE CONCEPT
+								</span>
+								<div class="step-color back"></div>
+								<div class="step-color front"></div>
 							</li>
 							<li>
-								<span class="step-text"><span class="text-upper">Step 3</span></span>
-								<div class="step-back-color"></div>
+								<span class="step-text">
+									<span class="text-upper enable-transition">Step 3.</span>
+									DESIGN THE READY PROTOTYPE
+								</span>
+								<div class="step-color back"></div>
+								<div class="step-color front"></div>
 							</li>
 							<li>
-								<span class="step-text"><span class="text-upper">Step 4</span></span>
-								<div class="step-back-color"></div>
+								<span class="step-text">
+									<span class="text-upper enable-transition">Step 4.</span>
+									LAUNCH THE PREPRODUCTION AND LINE PRODUCTION
+								</span>
+								<div class="step-color back"></div>
+								<div class="step-color front"></div>
 							</li>
 						</ul>
 					</div>
@@ -174,6 +204,10 @@
 <!--ENDMENU-->
 
 </section>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
 
 </body>
 

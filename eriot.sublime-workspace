@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"anim",
+				"animate	.animate() with callback"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
 				"font-",
 				"font-family"
 			],
@@ -188,10 +200,6 @@
 				"background-position"
 			],
 			[
-				"tex",
-				"text-decoration"
-			],
-			[
 				"toggle",
 				"toggleClass	.toggleClass()"
 			],
@@ -206,10 +214,6 @@
 			[
 				"filter",
 				"filter_var"
-			],
-			[
-				"rep",
-				"repeat"
 			],
 			[
 				"im",
@@ -510,10 +514,6 @@
 			[
 				"Task",
 				"TaskList"
-			],
-			[
-				"t",
-				"type	Attr"
 			]
 		]
 	},
@@ -523,7 +523,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2879,
+				"buffer_size": 4526,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/asideMenu.html",
+			"settings":
+			{
+				"buffer_size": 183,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +539,15 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 391,
+				"buffer_size": 293,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/LandingController.js",
+			"settings":
+			{
+				"buffer_size": 1951,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +555,7 @@
 			"file": "style/decoration.css",
 			"settings":
 			{
-				"buffer_size": 5319,
+				"buffer_size": 8033,
 				"line_ending": "Windows"
 			}
 		}
@@ -672,7 +688,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 453.0
+		"width": 441.0
 	},
 	"console":
 	{
@@ -695,7 +711,8 @@
 	[
 		"/C/xampp/htdocs/eriot",
 		"/C/xampp/htdocs/eriot/js",
-		"/C/xampp/htdocs/eriot/style"
+		"/C/xampp/htdocs/eriot/style",
+		"/C/xampp/htdocs/eriot/templates"
 	],
 	"file_history":
 	[
@@ -845,6 +862,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"step-back",
+			"{\n",
+			"section-title",
+			"content-wrapper",
+			"section-title",
+			":before",
 			"position: abso",
 			"stat-item div",
 			"stat-item",
@@ -966,13 +989,7 @@
 			"flex-item.right",
 			"address",
 			";\n",
-			".slider",
-			"slider",
-			"s1",
-			"outstaff-reasons-list",
-			"s-li-1",
-			"s-li ",
-			"s-li"
+			".slider"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1031,15 +1048,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2879,
+						"buffer_size": 4526,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								48
+								428,
+								428
 							]
 						],
 						"settings":
@@ -1054,6 +1071,35 @@
 					},
 					"stack_index": 0,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/asideMenu.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								94
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
 				}
 			]
 		},
@@ -1062,20 +1108,20 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "js/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 391,
+						"buffer_size": 293,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								380,
-								380
+								293,
+								293
 							]
 						],
 						"settings":
@@ -1087,24 +1133,53 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "style/decoration.css",
+					"buffer": 3,
+					"file": "js/LandingController.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5319,
+						"buffer_size": 1951,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								891,
-								891
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "style/decoration.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6980,
+								6980
 							]
 						],
 						"settings":
@@ -1113,10 +1188,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 573.0,
+						"translation.y": 5358.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1150,7 +1225,7 @@
 		"cols":
 		[
 			0.0,
-			0.579584775087,
+			0.519896193772,
 			1.0
 		],
 		"rows":

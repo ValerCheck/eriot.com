@@ -77,6 +77,13 @@ body {
 	background-color: #feeb37;
 }
 
+.enable-transition {
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
 .burgerImg {
 	display: inline-block;
 	vertical-align: middle;
@@ -385,9 +392,109 @@ body {
 	z-index: 5;
 }
 
-#step-slider {
-	width: 33.4269%;
+.services-next,
+.services-prev {
+	display: inline-block !important;
+	cursor: pointer;
+
+}
+
+.services-next {
+	float: right;
+}
+
+.services-prev {
 	float: left;
+}
+
+.services-next .button,
+.services-prev .button {
+	width: 56px;
+	height: 56px;
+	border: 1px solid #feeb37;
+}
+
+.services-next > *,
+.services-prev > * {
+	display: inline-block;
+}
+
+.services-buttons {
+	padding-top: 80px;
+}
+
+.button:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.button .arrow {
+	display: inline-block;
+	vertical-align: middle;
+	margin: auto;
+	width: 8px;
+	height: 16px;
+	background-image: url('./../images/services-arrows.png');
+}
+
+.services-prev:hover .button,
+.services-next:hover .button {
+	background-color: #feeb37;
+}
+
+.services-prev:hover .label,
+.services-next:hover .label {
+	color: #feeb37;
+}
+
+.services-prev:hover .arrow {
+	background-position: -16px -5px;
+}
+
+.services-next:hover .arrow {
+	background-position: -27px -5px;
+}
+
+.services-prev .arrow {
+	background-position: -5px -5px;
+}
+
+.services-next .arrow {
+	background-position: -38px -5px;
+}
+
+.services-next .label,
+.services-prev .label {
+	padding: 0 20px;
+	font-weight: bold;
+}
+
+.button,
+.button~.label {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.services-next:before,
+.services-prev:before {
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.slider-wrapper {
+	float: left;
+	width: 33.4269%;
+}
+
+.float-area:before,
+.float-area:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 #step-slider .step article:not(:first-child) {
@@ -398,6 +505,13 @@ body {
 	padding-left: 10.446%;
 	float: left;
 	width: 56%;
+}
+
+.services-content:before,
+.services-content:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 .steps-figures {
@@ -419,15 +533,23 @@ body {
 	height: 50px;
 }
 
-.step-back-color {
+.step-color {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #eee;
 	top: 5%;
 	height: 90%;
-	width: 100%;
     z-index: -1;
+}
+
+.step-color.back {
+	background-color: #eee;
+	width: 100%;
+}
+
+.step-color.front {
+	background-color: #feeb37;
+	width: 0%;
 }
 
 .steps-figures li:before {
