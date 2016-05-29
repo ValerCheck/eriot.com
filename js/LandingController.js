@@ -7,6 +7,9 @@ eriotApp.controller('LandingController',function($scope){
 		'title'	: ['Services'],
 		'link'	: '#', 
 	},{
+		'title'	: ['Devices'],
+		'link'	: '#', 
+	},{
 		'title'	: ['Expertise'],
 		'link'	: '#'
 	},{
@@ -18,6 +21,20 @@ eriotApp.controller('LandingController',function($scope){
 	},{
 		'title'	: ['Contacts'],
 		'link'	: '#'
+	}];
+
+	$scope.devices = [{
+		title :"Consumer Electronics",
+		desc  :"Smart phones, eReaders, Tablets, eNotes etc."
+	},{
+		title:"Internet of Things",
+		desc:"Fitness trackers, HealthCare and other devices"
+	},{
+		title :"Internet of Systems",
+		desc  :"Smart home, tracking and control systems, gadgets' synchronization"
+	},{
+		title :"Others",
+		desc  :"RobotoTechnic, Toys, Agro, Military, Embedded development, Engineering"
 	}];
 
 	$scope.steps = [{

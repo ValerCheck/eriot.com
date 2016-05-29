@@ -1,13 +1,6 @@
 var eriotApp = angular.module('eriotApp',[]);
 
 $(document).ready(function(){
-	/*$('.steps-figures').on('click','li',function(el){
-		var parent = $(el.toElement);
-		var elem = parent.find('.step-color.front');
-		$(elem).animate({
-			width: '100%'
-		},4000);
-	});*/
 
 	$(document).scroll(function(){
 		if ($(document).scrollTop()+$(window).height() - 100 >= $('.steps-figures').offset().top) {

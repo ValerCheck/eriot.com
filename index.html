@@ -169,11 +169,50 @@
 </section>
 <section id="devices" class="block">
 
-	<!--<nav class="asideMenu" 
+	<nav class="asideMenu" 
 		 ng-include="'./templates/asideMenu.html'"
 		 ng-repeat="title in menu[2].title">
-	</nav>-->
-	
+	</nav>
+
+	<div class="content">
+
+		<div class="background">
+			<img src='./images/devices-bg.png'/>
+		</div>
+
+		<div class="content-wrapper">
+			<section>
+				<div class="content-wrapper">
+					<div class="devices-contact float-area">
+						<p class="discuss-title text-upper left">
+							Are you ready to discuss <br/>
+							your project with our manager?
+						</p>
+						<div class="contact-us-btn text-upper right enable-transition">
+							Contact us
+						</div>
+					</div>
+
+					<div class="section-title">Devices</div>
+					<hr class="line-divider"/>
+					<div class="section-subtitle">PROJECTS WE CAN WORK ON</div>
+
+					<div class="devices-list float-area">
+
+						<div class="device-item" ng-repeat="device in devices">
+							<div class="desc">
+								<h3>{{device.title}}</h3>
+								<p>{{device.desc}}</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+		</div>
+	</div>
+
 </section>
 <section id="expertise" class="block">
 	
