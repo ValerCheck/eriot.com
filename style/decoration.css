@@ -224,6 +224,12 @@ body {
     position: relative;
 }
 
+#expertise {
+	width: 100%;
+	height: 1656px;
+	position: relative;
+}
+
 #devices .content {
 	top: -100px;
 }
@@ -238,13 +244,8 @@ body {
 #title .content .background {
 	position: absolute;
 	background: url('./../images/title-bg.png') 50%/100% no-repeat;
-	/*background-position: -5.003% 0;*/
-	/*height: 100%;*/
-	/*height: 1248px;*/
 	width: 100%;
 	z-index: -1;
-	/*margin: 0 0 0 96px;
-	margin: 0 0 0 5.003%;*/
 }
 
 .clear:after,
@@ -269,6 +270,10 @@ body {
 	font-weight: 100;
 }
 
+.section-subtitle.dark {
+	color: black;
+}
+
 #services .section-title {
 	padding-bottom: 50px;
 }
@@ -284,6 +289,195 @@ body {
 #title .content-wrapper section {
 	padding-top: 10.5322%;
 	padding-right: 20.423%;
+}
+
+#expertise .content-wrapper section {
+	padding-top: 13.5322%;
+	padding-right: 20.423%;	
+}
+
+.exp-line-area {
+	padding: 0;
+	width: 100%;
+	margin-top: 100px;
+	height: 103px;
+	position: relative;
+	font-size: 0;
+}
+
+.exp-line-area .pre-item,
+.exp-line-area .after-item {
+	background-image: url('./../images/expertise-line.png');
+	background-repeat: repeat-x;
+	min-width: 20%;
+	height: 100%;
+	float: left;
+}
+
+.exp-line-area:before {
+	content:'';
+	float: none;	
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+}
+
+.exp-line-area .line {
+	height: 1px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #eee;
+	position: relative;
+}
+
+.exp-line-area .for-mobile {
+	display: none;
+}
+
+.exp-line-area .line .color {
+	height: 1px;
+	position: absolute;
+	width: 0%;
+	background-color: red;
+}
+
+.exp-line-area > .line:first-child,
+.exp-line-area > .line:last-child {
+	width: 20%;
+}
+
+.exp-line-area:before {
+	background-color: #eee;
+}
+
+.exp-line-area:after {
+	width: 0%;
+	background-color: #feeb37;
+}
+
+.expertise-line {
+	height: 103px;
+	position: relative;
+}
+
+.expertise-line.middle {
+	background-image: url('./../images/expertise-line.png');
+	background-repeat: repeat-x;
+}
+
+.medical-devices {
+	background-image: url('./../images/medical-services.png');
+	background-repeat: no-repeat;
+}
+
+.ereaders-tablets {
+	background-image: url('./../images/ereaders-tablets.png');
+	background-repeat: no-repeat;
+}
+
+.wearable-iot {
+	background-image: url('./../images/wearables-iot.png');
+	background-repeat: no-repeat;
+}
+
+.telecom {
+	background-image: url('./../images/telecom.png');
+	background-repeat: no-repeat;
+}
+
+.expertise-line.middle:first-child {
+	width: 20.1822%;
+}
+
+.expertise-item > div {
+	display: table;
+	min-width: 130px;
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+	position: relative;
+}
+
+.expertise-item > div .line,
+.expertise-item > div .line {
+	display: table-cell;
+	background-color: transparent;
+}
+
+.expertise-item > div .line > div {
+	display: block;
+	height: 1px;
+	width: 100%;
+	background-color: #eee;
+	vertical-align: middle;
+	position: relative;
+}
+
+.expertise-item > div .line .color {
+	height: 1px;
+	position: absolute;
+	width: 0%;
+	background-color: red;
+}
+
+.expertise-item > div > div:not(.line) {
+	display: table-cell;
+	min-width: 130px;
+	width: 128px;
+	height: 100%;
+	vertical-align: middle;
+	position: relative;
+}
+
+.expertise-item > div .back-color {
+	position: absolute;
+	top: 1%;
+	height: 98%;
+    width: 99%;
+    left: 1%;
+    background-color: #eee;
+    z-index: -1;
+}
+
+.expertise-item > div .front-color {
+	position: absolute;
+	top: 1%;
+	height: 98%;
+    width: 0%;
+    left: 0%;
+    background-color: red;
+    z-index: -1;
+}
+
+.expertise-item .middle {
+    height: 100%;
+    background-image: url('./../images/expertise-line.png');
+    background-repeat: repeat-x;
+    overflow: hidden;
+    display: block;
+    float: none;
+}
+
+.expertise-item {
+	width: 15%;
+	height: 100%;
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.expertise-item.middle {
+	background-image: url('./../images/expertise-line.png');
+	background-repeat: repeat-x;
+}
+
+.expertise-line.middle:last-child {
+	width: 20.423%;
+}
+
+.expertise-line.items {
+	width: 60%;
 }
 
 #top-block {
@@ -310,13 +504,22 @@ body {
 	border-bottom: 1px solid white;
 }
 
-#devices .line-divider {
-	width: 312px;
+.line-divider.dark {
+	border-bottom: 1px solid black;	
 	margin: 0;
 	height: 0;
 	border-top: 0px;
 	border-left: 0px;
 	border-right: 0px;
+}
+
+#devices .line-divider {
+	width: 312px;
+}
+
+#expertise .line-divider {
+	width: 312px;
+	margin: 10px 0 15px 0;
 }
 
 .contact-us-btn {
@@ -463,7 +666,7 @@ body {
 .menu-block-title:before,
 .menu-block-title:after {
 	content:'';
-	width: 5px;
+	width: 0px;
 	display:inline-block;
 	height: 100%;
 	vertical-align: middle;
@@ -553,7 +756,7 @@ body {
 }
 
 .services-buttons {
-	padding-top: 80px;
+	padding-top: 100px;
 }
 
 .button:before {

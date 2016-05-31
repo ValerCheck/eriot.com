@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"f",
+				"feeb37"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"of",
+				"offset	.offset()"
+			],
+			[
+				"steps-",
+				"steps-figures"
+			],
+			[
 				"anim",
 				"animate	.animate() with callback"
 			],
@@ -14,10 +38,6 @@
 			[
 				"tex",
 				"text-align"
-			],
-			[
-				"font-",
-				"font-family"
 			],
 			[
 				"pre",
@@ -62,10 +82,6 @@
 			[
 				"text",
 				"textarea	Tag"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"backg",
@@ -364,10 +380,6 @@
 				"margin-left"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
 				"inl",
 				"inline-block"
 			],
@@ -502,18 +514,6 @@
 			[
 				"cont",
 				"content"
-			],
-			[
-				"User",
-				"UserTasksView"
-			],
-			[
-				"crea",
-				"createTaskView"
-			],
-			[
-				"Task",
-				"TaskList"
 			]
 		]
 	},
@@ -523,15 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4526,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/asideMenu.html",
-			"settings":
-			{
-				"buffer_size": 183,
+				"buffer_size": 6382,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +531,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 293,
+				"buffer_size": 1308,
 				"line_ending": "Windows"
 			}
 		},
@@ -547,7 +539,7 @@
 			"file": "js/LandingController.js",
 			"settings":
 			{
-				"buffer_size": 1951,
+				"buffer_size": 2484,
 				"line_ending": "Windows"
 			}
 		},
@@ -555,7 +547,7 @@
 			"file": "style/decoration.css",
 			"settings":
 			{
-				"buffer_size": 8033,
+				"buffer_size": 11602,
 				"line_ending": "Windows"
 			}
 		}
@@ -710,12 +702,13 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/eriot",
+		"/C/xampp/htdocs/eriot/images",
 		"/C/xampp/htdocs/eriot/js",
-		"/C/xampp/htdocs/eriot/style",
 		"/C/xampp/htdocs/eriot/templates"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/eriot/templates/asideMenu.html",
 		"/C/xampp/htdocs/eriot/js/app.js",
 		"/C/xampp/htdocs/8relocate/admin/blog/delete.php",
 		"/C/xampp/htdocs/8relocate/biz/blog/index.php",
@@ -842,8 +835,7 @@
 		"/E/HerokuTest/php-getting-started/composer.json",
 		"/E/MyProjects/Web/dotnet-cv/CVStyle.css",
 		"/E/MyProjects/Web/dotnet-cv/index.html",
-		"/C/Users/kleva_000/Desktop/supersized/buildinternet-supersized-d6ed282/slideshow/demo.html",
-		"/E/MyProjects/Web/dedicateteam.com/no-flex-index.html"
+		"/C/Users/kleva_000/Desktop/supersized/buildinternet-supersized-d6ed282/slideshow/demo.html"
 	],
 	"find":
 	{
@@ -862,6 +854,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			":hover",
+			"devices",
+			"#devices ",
+			"float",
+			".block",
+			"block",
+			"services-prev",
+			"button",
 			"step-back",
 			"{\n",
 			"section-title",
@@ -981,15 +981,7 @@
 			"img-1",
 			"proposal-img",
 			"contact-item",
-			"img-1",
-			"contact-item",
-			"contact-us",
-			"png",
-			"jpg",
-			"flex-item.right",
-			"address",
-			";\n",
-			".slider"
+			"img-1"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1048,15 +1040,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4526,
+						"buffer_size": 6382,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								428,
-								428
+								5711,
+								5711
 							]
 						],
 						"settings":
@@ -1066,7 +1058,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2346.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1074,54 +1066,53 @@
 				},
 				{
 					"buffer": 1,
-					"file": "templates/asideMenu.html",
+					"file": "js/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 183,
+						"buffer_size": 1308,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								94,
-								94
+								77,
+								77
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 2,
-					"file": "js/app.js",
+					"file": "js/LandingController.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 293,
+						"buffer_size": 2484,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								293,
-								293
+								740,
+								740
 							]
 						],
 						"settings":
@@ -1131,55 +1122,26 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/LandingController.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1951,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 630.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "style/decoration.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8033,
+						"buffer_size": 11602,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6980,
-								6980
+								1786,
+								1786
 							]
 						],
 						"settings":
@@ -1188,10 +1150,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5358.0,
+						"translation.y": 1431.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1225,7 +1187,7 @@
 		"cols":
 		[
 			0.0,
-			0.519896193772,
+			0.535824007181,
 			1.0
 		],
 		"rows":
@@ -1285,7 +1247,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 210.0,
+	"side_bar_width": 171.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
