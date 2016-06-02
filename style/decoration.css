@@ -293,7 +293,7 @@ body {
 
 #expertise .content-wrapper section {
 	padding-top: 13.5322%;
-	padding-right: 20.423%;	
+	padding-right: 20.423%;
 }
 
 .exp-line-area {
@@ -532,12 +532,75 @@ body {
 	display: inline-block;
 }
 
+#expertise .exp-line-area + .content-wrapper section {
+	padding-top: 0;
+	padding-right: 20.423%;
+}
+
 .contact-us-btn:hover {
 	color: white;
 }
 
 .devices-contact {
 	margin-top: 355px;
+}
+
+#expertise .contact-us {
+	margin-top: 100px;
+	width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expertise-blocks {
+	margin-top: 100px;
+	/*width: 80%;*/
+	text-align: center;
+	font-size: 0;
+}
+
+.expertise-blocks .item {
+	width: 328px;
+	margin: 0;
+	padding: 0;
+	height: 328px;
+}
+
+.block-pair {
+	width: 330px;
+	display: inline-block;
+}
+
+.expertise-blocks .right {
+	border: 1px solid #ffde2b;
+}
+
+.expertise-blocks .left {
+	border: 1px solid #122b3a;
+}
+
+.expertise-blocks .item {
+	border: 1px solid black;
+}
+
+.expertise-blocks .item:nth-child(even) {
+	background-color: yellow;
+}
+
+.expertise-blocks .item:nth-child(odd) {
+	background-color: blue;
+}
+
+.contact-us .title {
+	color: black;
+	font-size: 46px;
+	font-weight: bold;
+	font-family: 'Roboto Condensed';
+	margin: 0;
+}
+
+#expertise .contact-us .title {
+	line-height: 100px;
 }
 
 .discuss-title {

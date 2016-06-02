@@ -56,7 +56,11 @@ $(document).ready(function(){
 				    if(id<elements.length){
 				    	var elem = $(elements[id]);
 				    	if (elem.css('display') == 'none') fill(id+1);
-				    	else elem.animate({width:'100%'}, speeds[id],"linear", function(){ fill(id+1)});
+				    	else {
+				    		var percent = '100%';
+				    		if (elem.hasClass('front-color')) percent = '99%';
+				    		elem.animate({width:percent}, speeds[id],"linear", function(){ fill(id+1)});
+				    	} 
 				    } 
 				}
 
