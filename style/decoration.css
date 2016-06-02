@@ -515,6 +515,7 @@ body {
 
 #devices .line-divider {
 	width: 312px;
+	text-align: left;
 }
 
 #expertise .line-divider {
@@ -571,24 +572,36 @@ body {
 	display: inline-block;
 }
 
-.expertise-blocks .right {
-	border: 1px solid #ffde2b;
-}
-
-.expertise-blocks .left {
+.block-pair:nth-child(1) .item:first-child {
+	background-image: url(./../images/expertise-1.png);
+	background-size: cover;
+	background-position: center center;
 	border: 1px solid #122b3a;
 }
 
-.expertise-blocks .item {
-	border: 1px solid black;
+.block-pair:nth-child(2n+1) .item:last-child {
+	background-color: #ffde2b;
+	width: 330px;
+	height: 330px;
 }
 
-.expertise-blocks .item:nth-child(even) {
-	background-color: yellow;
+.block-pair:nth-child(2) .item:first-child {
+	background-color: #122b3a;
+	width: 330px;
+	height: 330px;
 }
 
-.expertise-blocks .item:nth-child(odd) {
-	background-color: blue;
+.block-pair:nth-child(3) .item:first-child {
+	background-color: #2d4d61;
+	width: 330px;
+	height: 330px;
+}
+
+.block-pair:nth-child(2) .item:last-child {
+	background-image: url(./../images/expertise-2.png);
+	background-size: cover;
+	background-position: center center;
+	border: 1px solid #ffde2b;
 }
 
 .contact-us .title {
