@@ -339,7 +339,7 @@ body {
 	height: 1px;
 	position: absolute;
 	width: 0%;
-	background-color: red;
+	background-color: #ffde2b;
 }
 
 .exp-line-area > .line:first-child,
@@ -418,12 +418,12 @@ body {
 	height: 1px;
 	position: absolute;
 	width: 0%;
-	background-color: red;
+	background-color: #ffde2b;
 }
 
 .expertise-item > div > div:not(.line) {
 	display: table-cell;
-	min-width: 130px;
+	min-width: 128px;
 	width: 128px;
 	height: 100%;
 	vertical-align: middle;
@@ -446,7 +446,7 @@ body {
 	height: 98%;
     width: 0%;
     left: 0%;
-    background-color: red;
+    background-color: #ffde2b;
     z-index: -1;
 }
 

@@ -12,83 +12,54 @@ $(document).ready(function(){
 		}
 
 		if ($(document).scrollTop()+$(window).height() - 100 >= $('.exp-line-area').offset().top) {
+			
 			var elements = [];
 			var notColor = [];
 			var lengths  = [];
-			var speeds 	 = [];
+			var time = 3000;
+			
 			var condElem = $('.exp-line-area > div.line:last-child .color');
+			
 			if (parseInt(condElem.css('width')) == 0) {
 
-				lengths.push(parseFloat($('.exp-line-area > div.line:first').css('width')));
-				var len = lengths[0];
+				function addElementSelector(iter, k1, k2, offset, callbacks) {
+					if (!iter) return;
+					for (var i = 1; i < 3; i++) {
+						elements.push('#'+ (2*i+k1) 	+ '.color');
+						elements.push('.expertise-item:nth-child('+(i+offset)+') .front-color');
+						elements.push('#'+ (2*i+k2) + '.color');
+					}
+					if (callbacks.length > 0) callbacks.pop()();
+					addElementSelector(iter-1,k1 + 4,k2+4,offset + 4, callbacks);
+				}
 
 				elements.push('.exp-line-area > div.line:first .color');
-				
-				for (var i = 1; i < 3; i++) {
-					
-					var first = '#'+ (2*i-1);
-					var middle = '.expertise-item:nth-child('+(i+1)+')';
-					var last = '#'+ (2*i);
 
-					lengths.push(parseFloat($(first).parent().css('width')));
-					lengths.push(parseFloat($(middle).css('width')));
-					lengths.push(parseFloat($(last).parent().css('width')));
-
-					len += lengths[1];
-					len += lengths[2];
-					len += lengths[3];
-
-					elements.push(first 	+ '.color');
-					elements.push(middle + ' .front-color');
-					elements.push(last   + '.color');
-				}
-
-				var lineFirst = '.exp-line-area .line.for-mobile:first';
-				var lineLast =	'.exp-line-area .line.for-mobile:last'; 
-				lengths.push(parseFloat($(lineFirst).css('width')));
-				lengths.push(parseFloat($(lineLast).css('width')));
-
-				elements.push(lineFirst);
-				elements.push(lineLast);
-
-				for (var i = 1; i < 3; i++) {
-
-					var first = '#'+ (3+2*i);
-					var middle = '.expertise-item:nth-child('+(i+5)+')';
-					var last = '#'+ (4+2*i);
-
-					lengths.push(parseFloat($(first).parent().css('width')));
-					lengths.push(parseFloat($(middle).css('width')));
-					lengths.push(parseFloat($(last).parent().css('width')));
-
-					len += lengths[6];
-					len += lengths[7];
-					len += lengths[8];
-
-					elements.push(first 	+ '.color');
-					elements.push(middle + ' .front-color');
-					elements.push(last   + '.color');
-				}
-
-				lengths.push(parseFloat($('.exp-line-area > div.line:last').css('width')));
-
-				len += lengths[9];
-				var velocity = len/3000;
-				speeds = lengths.map(function(el){
-					return el/velocity;
-				});
+				addElementSelector(2,-1,0,1,[function(){
+					elements.push('.exp-line-area .line.for-mobile:first .color');
+					elements.push('.exp-line-area .line.for-mobile:last .color');
+				}]);
 
 				elements.push('.exp-line-area > div.line:last .color');
 
-				var arr = elements;
+				for (var i = 0; i < elements.length; i++) {
+					var elem = $(elements[i]);
+					var parent = elem.parent();
+					lengths.push(parseFloat(parent.css('width')));
+				}
+
+				var velocity = lengths.reduce(function(a,b){return a+b;},0)/time;
+
+				var speeds = lengths.map(function(el){ return el/velocity; });
 				
 				function fill(id){
-				    if(id<arr.length){
-				    	var elem = $(arr[id]);
+				    if(id<elements.length){
+				    	var elem = $(elements[id]);
 				    	if (elem.css('display') == 'none') fill(id+1);
 				    	else elem.animate({width:'100%'}, speeds[id],"linear", function(){ fill(id+1)});
 				    } 
 				}
+
 				fill(0);
 				
 			}
