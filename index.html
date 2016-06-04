@@ -430,16 +430,30 @@
 </section>
 <section id="awards-cases" class="block">
 	
-<!--MENU-->
+	<nav class="asideMenu" 
+		 ng-include="'./templates/asideMenu.html'"
+		 ng-repeat="title in menu[5].title">
+	</nav>
 
-<!--ENDMENU-->
+	<div class="content-wrapper">
+		<section>
+			<div class="content-wrapper">
+
+				<div class="section-title">Team</div>
+				<hr class="line-divider"/>
+				<div class="section-subtitle">Our key professionals</div>
+
+				
+		</section>
+	</div>
 
 </section>
 <section id="contacts" class="block">
 	
-<!--MENU-->
-
-<!--ENDMENU-->
+	<nav class="asideMenu" 
+		 ng-include="'./templates/asideMenu.html'"
+		 ng-repeat="title in menu[6].title">
+	</nav>
 
 </section>
 
