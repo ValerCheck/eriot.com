@@ -29,7 +29,7 @@
 			<section>
 				<div id="top-block" class="clear">
 					<img src="./images/text-logo.png" height="30px" width="171px"/>
-					<a class="contacts-text" href="#">Contact Us</a>
+					<a class="contacts-text yellow" href="#">Contact Us</a>
 				</div>
 
 				<h1 id="idea-title">Help turning your <span class='mark-word'>ideas</span>
@@ -323,15 +323,33 @@
 				<div class="expertise-blocks">
 					<div class="block-pair float-area">
 						<div class="item left"></div>
-						<div class="item left"></div>
+						<div class="item left detailed">
+							<h3 class="dark">Get detailed information</h3>
+							<form>
+								<input type="text" class="black" placeholder="Your email"></input>
+								<a class="contacts-text black" href="#">Send</a>
+							</form>
+						</div>
 					</div><!--
 					--><div class="block-pair float-area">
-						<div class="item right"></div>
+						<div class="item right light">
+							<h3>WE CAN HELP WITH A SPECIFIC TASK OR STAGE</h3>
+							<p>Our team helped to refine the binocular, adding the function of the thermal camera image transmission. The image can now be seen on the phone screen in the real-time mode</p>
+						</div>
 						<div class="item right"></div>
 					</div><!--
 					--><div class="block-pair float-area">
-						<div class="item left"></div>
-						<div class="item left"></div>
+						<div class="item right detailed light">
+							<h3>Get detailed information</h3>
+							<form>
+								<input class="white" type="text" placeholder="Your email"></input>
+								<a class="contacts-text white" href="#">Send</a>
+							</form>
+						</div>
+						<div class="item right black">
+							<h3>WE DO TURN-KEY PROJECTS</h3>
+							<p>(Petcube) Our team took part in the project from the very first idea up to mass production launch</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -342,9 +360,49 @@
 </section>
 <section id="team" class="block">
 	
-<!--MENU-->
+	<nav class="asideMenu" 
+		 ng-include="'./templates/asideMenu.html'"
+		 ng-repeat="title in menu[3].title">
+	</nav>
 
-<!--ENDMENU-->
+	<div class="content">
+
+		<div class="background">
+			<img src='./images/team-bg.png'/>
+		</div>
+
+		<div class="content-wrapper">
+			<section>
+				<div class="content-wrapper">
+					<div class="devices-contact float-area">
+						<p class="discuss-title text-upper left">
+							Are you ready to discuss <br/>
+							your project with our manager?
+						</p>
+						<div class="contact-us-btn text-upper right enable-transition">
+							Contact us
+						</div>
+					</div>
+
+					<div class="section-title">Devices</div>
+					<hr class="line-divider"/>
+					<div class="section-subtitle">PROJECTS WE CAN WORK ON</div>
+
+					<div class="devices-list float-area">
+
+						<div class="device-item" ng-repeat="device in devices">
+							<div class="desc">
+								<h3>{{device.title}}</h3>
+								<p>{{device.desc}}</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+		</div>
+	</div>
 
 </section>
 <section id="awards-cases" class="block">
