@@ -27,6 +27,12 @@
 @font-face {
 	font-family: 'Roboto Condensend';
 	src: url('./../Roboto Condensend regular.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto Condensend';
+	src : url('./../Roboto Condensend 300.ttf');
+	font-weight: 300;
 	font-style: normal;
 }
 
@@ -247,7 +253,11 @@ body {
 }
 
 #team {
-	height: 1201px;
+	height: 1080px;
+}
+
+#team .content {
+	top: -30px;
 }
 
 #devices .content {
@@ -537,12 +547,133 @@ body {
 	border-right: 0px;
 }
 
-#devices .line-divider {
-	width: 312px;
-	text-align: left;
+.person {
+	margin-top: 30px;
+	background: no-repeat center top;
+	background-size: contain;
+	position: relative;
+	display: inline-block;
+	width: 272px;
+	/*height: 304px;*/
+	height: 315px;
 }
 
-#expertise .line-divider {
+
+.person .call-to-action {
+	color: black;
+	font-family: 'Roboto Condensed';
+	display: inline-block;
+	width: inherit;
+	vertical-align: middle;
+}
+
+.person .call-to-action span {
+	font-size: 43px;
+	display: block;
+	text-align-last: center;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.person .call-to-action span:first-child {
+	font-size: 50px;
+}
+
+/*.left-block:before,
+.right-block:before {
+	content:'';
+	display: block;
+	width: 100%;
+}
+
+.left-block:after,
+.right-block:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}*/
+
+.left-block,
+.right-block {
+	display: inline-block;
+	width: 100%;
+}
+
+p.title {
+	height: auto;
+}
+
+.person .title {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	height: 80px;
+	width: 100%;
+	background: #fce35d;
+	text-transform: uppercase;
+	color: black;
+	font-size: 20px;
+	text-align-last: center;
+}
+
+.person .title span {
+	font-family: 'Roboto Condensed';
+	line-height: 80px;
+	font-weight: bold;
+}
+
+.person:last-child {
+	background: #fce35d none !important;
+	vertical-align: top;
+}
+
+.person:last-child:before {
+	content:'';
+	display:inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.person:nth-child(4n+1) {
+	background-image: url(./../images/team-1.jpg);
+}
+
+.person:nth-child(4n+2) {
+	background-image: url(./../images/team-2.jpg);
+}
+
+.person:nth-child(4n+3) {
+	background-image: url(./../images/team-3.jpg);
+}
+
+.person:nth-child(4n+4) {
+	background-image: url(./../images/team-4.jpg);
+}
+
+.team-persons {
+	font-size: 0;
+	text-align: justify;
+	text-align-last: justify;
+}
+
+.team-persons::nth-line(3) {
+	text-align-last: center;
+	text-align: center;
+}
+
+.team-persons::-webkit-nth-line(3) {
+	text-align-last: center;
+	text-align: center;
+}
+
+.team-persons:-webkit-nth-line(3) {
+	text-align-last: center;
+	text-align: center;
+}
+
+#devices .line-divider,
+#expertise .line-divider,
+#team .line-divider {
 	width: 312px;
 	margin: 10px 0 15px 0;
 }
@@ -719,8 +850,9 @@ body {
 	line-height: 50px;
 }
 
+#team .content-wrapper section,
 #devices .content-wrapper section {
-    padding-right: 20.423%;
+	padding-right: 20.423%;
 }
 
 .left {
@@ -821,6 +953,10 @@ body {
 .mark-word,
 .section-title {
 	color: #feeb37;
+}
+
+#team .content-wrapper {
+	margin-top: 10%;
 }
 
 #devices .section-title {

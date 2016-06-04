@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"fe",
+				"ffde2b"
+			],
+			[
+				"bakc",
+				"background-color"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
 				"add",
 				"addElementSelector"
 			],
@@ -72,10 +88,6 @@
 				"feeb37"
 			],
 			[
-				"font-",
-				"font-size"
-			],
-			[
 				"of",
 				"offset	.offset()"
 			],
@@ -102,10 +114,6 @@
 			[
 				"inlie",
 				"inline-block"
-			],
-			[
-				"text-",
-				"text-decoration"
 			],
 			[
 				"article",
@@ -506,14 +514,6 @@
 			[
 				"counter",
 				"counter-increment"
-			],
-			[
-				"no",
-				"nowrap"
-			],
-			[
-				"rg",
-				"rgba()"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8487,
+				"buffer_size": 11651,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "js/app.js",
 			"settings":
 			{
-				"buffer_size": 2959,
+				"buffer_size": 3077,
 				"line_ending": "Windows"
 			}
 		},
@@ -547,7 +547,7 @@
 			"file": "style/decoration.css",
 			"settings":
 			{
-				"buffer_size": 14932,
+				"buffer_size": 20014,
 				"line_ending": "Windows"
 			}
 		}
@@ -559,10 +559,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 196.0,
-		"last_filter": "wr",
+		"height": 58.0,
+		"last_filter": "install",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"wr",
 				"Word Wrap: Toggle"
@@ -636,10 +640,6 @@
 				"JSHint"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"snip",
 				"Snippet: $(this)"
 			],
@@ -680,13 +680,14 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 441.0
+		"width": 398.0
 	},
 	"console":
 	{
-		"height": 126.0,
+		"height": 250.0,
 		"history":
 		[
+			"import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -708,8 +709,8 @@
 	],
 	"file_history":
 	[
-		"/C/xampp/htdocs/eriot/templates/asideMenu.html",
 		"/C/xampp/htdocs/eriot/js/app.js",
+		"/C/xampp/htdocs/eriot/templates/asideMenu.html",
 		"/C/xampp/htdocs/8relocate/admin/blog/delete.php",
 		"/C/xampp/htdocs/8relocate/biz/blog/index.php",
 		"/C/xampp/htdocs/8relocate/admin/blog/blog.php",
@@ -854,6 +855,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font-family: 'ro",
+			"end ",
+			"n\\+2",
+			"person",
+			"-\\d*px",
+			".line-divider",
+			"content-wrapper",
+			"section-title",
+			"#devices",
+			"devices",
+			"form",
+			"contacts",
+			"contact-text",
+			"Contact",
+			"Send",
+			"#expertise .contact-us",
+			"contact-us",
+			"content-wrapper",
+			"contact-us",
+			"min-width: 13",
 			"red",
 			".line",
 			" 2px",
@@ -961,32 +982,12 @@
 			"feat-slider-",
 			"r-list",
 			"turnkey",
-			"in a few",
-			"filter",
-			"portfolio.html",
-			"index.html",
-			"pre-con",
-			"slider-item",
-			"pre-content",
-			",",
-			"\"",
-			"fit-width",
-			"slider-item",
-			":before",
-			"before ",
-			"content-wrapper:",
-			"content-wrapper",
-			"half-width",
-			".slider-item .content",
-			"slider-item",
-			"feat-button",
-			"transition",
-			"color"
+			"in a few"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 			"selectedArticle",
@@ -1031,7 +1032,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1040,28 +1041,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8487,
+						"buffer_size": 11651,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7243,
-								7243
+								11230,
+								11230
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false,
-							"word_wrap": false
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3936.0,
+						"translation.y": 6445.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1070,15 +1071,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2959,
+						"buffer_size": 3077,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1190,
-								1190
+								2052,
+								2052
 							]
 						],
 						"settings":
@@ -1086,11 +1087,11 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 405.0,
+						"translation.x": 112.0,
+						"translation.y": 420.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1134,15 +1135,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14932,
+						"buffer_size": 20014,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7547,
-								7549
+								548,
+								548
 							]
 						],
 						"settings":
@@ -1151,10 +1152,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6438.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1188,7 +1189,7 @@
 		"cols":
 		[
 			0.0,
-			0.670711297071,
+			0.575313807531,
 			1.0
 		],
 		"rows":
