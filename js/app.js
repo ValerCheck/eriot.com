@@ -1,5 +1,65 @@
 var eriotApp = angular.module('eriotApp',[]);
 
+function initializeMap() {
+	var pos = new google.maps.LatLng(50.4251127,30.5331364);
+	
+	var customMapType = new google.maps.StyledMapType([
+		{
+			featureType : 'all',
+			elementType : 'geometry',
+			stylers : [
+				{
+					hue : "#ffff00",
+					color: "#ff0000"
+				}
+			]
+		},
+		{
+			elementType : 'labels',
+			stylers : [{visibility: 'on'}]
+		}
+	],{name: 'Custom Style'});
+	var customMapTypeId = 'custom_style';
+
+	var infoWindow = new google.maps.InfoWindow({
+		content: '<b> We are here! </b>'
+	});
+
+	var mapOptions = {
+		zoom 		: 18,
+		center 		: pos,
+		mapTypeControlOptions : {
+			mapTypeIds 	: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+		}
+	}
+
+	var map = new google.maps.Map($('.location')[0],mapOptions);
+
+	map.mapTypes.set(customMapTypeId, customMapType);
+	map.setMapTypeId(customMapTypeId);
+
+	var image = {
+		url  : 'images/map-marker.png'
+	};
+
+	var marker = new google.maps.Marker({
+		position : pos,
+		map 	 : map,
+		icon : image,
+		title 	 : 'We are here!'
+	});
+
+	google.maps.event.addListener(marker,'click',function(){
+		infoWindow.open(map,marker);
+	});
+
+	google.maps.event.addDomListener(window,'resize',function(){
+		var center = map.getCenter();
+		google.maps.event.trigger(map,'resize');
+		map.setCenter(center);
+	});
+}
+
 $(document).ready(function(){
 
 	$(document).scroll(function(){
@@ -10,6 +70,8 @@ $(document).ready(function(){
 				width: '100%'
 			}, 3000);
 		}
+
+		var filling = false;
 
 		if ($(document).scrollTop()+$(window).height() - 100 >= $('.exp-line-area').offset().top) {
 			
@@ -53,6 +115,7 @@ $(document).ready(function(){
 				var speeds = lengths.map(function(el){ return el/velocity; });
 				
 				function fill(id){
+					if (!filling) filling = true;
 				    if(id<elements.length){
 				    	var elem = $(elements[id]);
 				    	if (elem.css('display') == 'none') fill(id+1);
@@ -64,7 +127,7 @@ $(document).ready(function(){
 				    } 
 				}
 
-				fill(0);
+				if (!filling) fill(0);
 				
 			}
 		}
@@ -98,4 +161,6 @@ $(document).ready(function(){
 		nextArrow: $('.services-next'),
   		prevArrow: $('.services-prev')
 	});
+
+	initializeMap();
 });

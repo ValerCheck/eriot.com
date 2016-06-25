@@ -55,6 +55,12 @@ body {
 	position: relative;
 }
 
+#contacts {
+	width: 100%;
+	height: 1145px;
+	position: relative;
+}
+
 #services {
 	width: 100%;
 	height: 1080px;
@@ -290,6 +296,11 @@ body {
 	background: url('./../images/title-bg.png') 50%/100% no-repeat;
 }
 
+#contacts .content .background {
+	background: url('./../images/contacts-bg.png') 50%/100% no-repeat;
+	top: -100px;
+}
+
 .clear:after,
 .clear:before {
 	content: '';
@@ -316,7 +327,8 @@ body {
 	color: black;
 }
 
-#services .section-title {
+#services .section-title,
+#contacts .section-title {
 	padding-bottom: 50px;
 }
 
@@ -470,7 +482,7 @@ body {
 .expertise-item > div > div:not(.line) {
 	display: table-cell;
 	min-width: 128px;
-	width: 128px;
+	width: 127px;
 	height: 100%;
 	vertical-align: middle;
 	position: relative;
@@ -662,6 +674,17 @@ p.title {
 	background-image: url(./../images/team-4.jpg);
 }
 
+
+.person:nth-child(5),
+.person:nth-child(8) {
+	background: none;
+}
+
+.person:nth-child(5) .title,
+.person:nth-child(8) .title {
+	background: none;
+}
+
 .team-persons {
 	font-size: 0;
 	text-align: justify;
@@ -789,6 +812,96 @@ p.title {
 
 .devices-contact {
 	margin-top: 355px;
+}
+
+.contacts-area {
+	width: 100%;
+	position: relative;
+}
+
+.location {
+	/*background: red;*/
+}
+
+a[href^="http://maps.google.com/maps"],
+a[href^="https://maps.google.com/maps"]
+{display:none !important;}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+	display: none;
+}
+
+.gmnoprint div {
+	background: none !important;
+}
+
+.address {
+	background: #122b3a;
+	border: 1px solid #ffde2b;
+	width: 49.7%;
+}
+
+.location,
+.address {
+	overflow: hidden;
+	float:left;
+}
+
+.address__content {
+	padding: 40px 100px;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	clear: both;
+}
+
+.our-contacts,
+.our-address {
+	margin-bottom: 40px;
+}
+
+.our-contacts {
+	float: left;
+}
+
+.our-address {
+	float: right;
+}
+
+.write-us {
+	margin-top: 20px !important;
+	margin-bottom: 30px !important;
+}
+
+.our-contacts > h4,
+.our-address > h4,
+.write-us
+ {
+	margin-top: 0;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: #ffde2b;
+	font-family: 'Roboto Condensed';
+}
+
+.our-contacts > span,
+.our-address > span {
+	color: white;
+	padding-bottom: 40px;
+}
+
+.location {
+	width: 49.8%;
+}
+
+.location:before,
+.address:before {
+	content: '';
+	padding-top: 100%;
+	float: left;
 }
 
 #expertise .contact-us {
@@ -942,7 +1055,8 @@ p.title {
 
 #team .content-wrapper section,
 #devices .content-wrapper section,
-#awards-cases .content-wrapper section {
+#awards-cases .content-wrapper section,
+#contacts .content-wrapper section {
 	padding-right: 20.423%;
 }
 
@@ -1046,6 +1160,10 @@ p.title {
 }
 
 #team .content-wrapper {
+	margin-top: 10%;
+}
+
+#contacts .content-wrapper {
 	margin-top: 10%;
 }
 
@@ -1303,6 +1421,27 @@ p.title {
 	height: 52px;
 	left: 60px;
 	width: 100%;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+	display: block;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	font-family: 'Roboto Condensed';
+}
+
+.contacts-form textarea {
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.contacts-form input {
+	margin-bottom: 10px;
 }
 
 .text-upper {

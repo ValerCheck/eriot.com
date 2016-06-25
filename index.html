@@ -11,6 +11,7 @@
 <script src="./js/angular.min.js"></script>
 <script src="./js/app.js"></script>
 <script type="text/javascript" src="./js/LandingController.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
 <body ng-view ng-controller='LandingController'>
 <section id="title" class="block">
@@ -402,7 +403,6 @@
 					 	</div>
 					 	<div class="person">
 							<div class="title">
-								<span>Roma, Investor</span>
 							</div>
 						</div>
 					 	<div class="person">
@@ -489,6 +489,53 @@
 		 ng-include="'./templates/asideMenu.html'"
 		 ng-repeat="title in menu[6].title">
 	</nav>
+
+	<div class="content">
+
+		<div class="background">
+			<img src='./images/contacts-bg.png'/>
+		</div>
+
+		<div class="content-wrapper">
+			<section>
+				<div class="content-wrapper">
+					<div class="section-title">Contacts</div>
+
+					<div class="contacts-area float-area">
+						<div class="location"></div>
+						<div class="address">
+							<div class="address__content">
+								<div class="clearfix">
+									<div class="our-contacts">
+										<h4>Our contacts</h4>
+										<span>
+											vp@engineeriot.com <br/>
+											+380 98 888 02 01
+										</span>
+									</div>
+									<div class="our-address">
+										<h4>Our address</h4>
+										<span>
+										Ukraine, Kyiv, 01133,<br/>
+										Konovaltsia, 36V,  8th floor
+										</span>
+									</div>
+								</div>
+								<h4 class="write-us">Write us</h4>
+								<form class="contacts-form">
+									<input class="white" type="text" placeholder="Name"></input>
+									<input class="white" type="text" placeholder="Phone"></input>
+									<input class="white" type="text" placeholder="Email"></input>
+									<textarea class="white" placeholder="What do you want to ask us?"></textarea>
+									<a class="contacts-text white" href="#">Send</a>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
 
 </section>
 
