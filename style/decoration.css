@@ -299,6 +299,7 @@ body {
 #contacts .content .background {
 	background: url('./../images/contacts-bg.png') 50%/100% no-repeat;
 	top: -100px;
+	left: 96px;
 }
 
 .clear:after,
@@ -875,6 +876,43 @@ a[href^="https://maps.google.com/maps"]
 	margin-bottom: 30px !important;
 }
 
+.our-projects > h4 {
+	margin-top: 40px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Roboto Condensed';	
+}
+
+.our-projects {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.projects-list {
+	text-align: justify;
+}
+
+.projects-list:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.project-item {
+	display: inline;
+}
+
+#contacts .content-wrapper {
+	position: relative;
+}
+
+.project-item > img {
+	vertical-align: middle;
+}
+
 .our-contacts > h4,
 .our-address > h4,
 .write-us
@@ -1060,6 +1098,11 @@ a[href^="https://maps.google.com/maps"]
 	padding-right: 20.423%;
 }
 
+#contacts .content-wrapper section {
+	height: 80%;
+	padding-top: 12%;	
+}
+
 .left {
 	float: left;
 }
@@ -1163,8 +1206,12 @@ a[href^="https://maps.google.com/maps"]
 	margin-top: 10%;
 }
 
+/*#contacts .content-wrapper {
+	margin-top: 12%;
+}*/
+
 #contacts .content-wrapper {
-	margin-top: 10%;
+	height: 100%;
 }
 
 #devices .section-title {
