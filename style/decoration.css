@@ -294,12 +294,12 @@ body {
 
 #title .content .background {
 	background: url('./../images/title-bg.png') 50%/100% no-repeat;
+	/*height: inherit;*/
 }
 
 #contacts .content .background {
 	background: url('./../images/contacts-bg.png') 50%/100% no-repeat;
 	top: -100px;
-	left: 96px;
 }
 
 .clear:after,

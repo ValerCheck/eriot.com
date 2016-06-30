@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1920px) {
+	
+	.block .asideMenu {
+		width: 96px;
+	}
+
+	.content .background img {
+		display: none !important;
+		width: 0;
+	}
+
+	#title .content .background {
+		height: 1000px;
+	}
+
+	#title {
+		height: 900px !important;
+	}
+
+	#team .content .background {
+		background: url('./../images/team-bg.png') 100% no-repeat;
+	}
+
+	#devices .content .background {	
+		background: url('./../images/devices-bg.png') 50%/100% no-repeat;
+	}
+
+	#title .content .background {
+		background: url('./../images/title-bg.png') center no-repeat !important;
+		background-size: cover !important;
+		/*height: inherit;*/
+	}
+
+	#contacts .content .background {
+		background: url('./../images/contacts-bg.png') 50%/100% no-repeat;
+		top: -100px;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+	.block#title .content-wrapper section {
+		padding-right: 5%;
+	}
+
+	#title section #idea-title {
+		text-align: center !important;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#title .stat-info .stat-item {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#title .stat-info .stat-item:not(:first-child) {
+		margin-top: 100px;
+	}
+
+	#title .stat-item p {
+		height: 150px;
+	}
+
+	#title .stat-item > div.stat-border {
+		height: 175px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.block .asideMenu {
+		width: 50px;
+	}
+
+	.asideMenu .menu-logo {
+		width: 40px;
+		height: 40px;
+	}
+
+	#title section #idea-title {
+		font-size: 29px;
+	    text-align: justify;
+	    text-align-last: center;
+	    white-space: normal;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	#title #idea-title {
+		font-size: 40px;
+	}
+
+	.stat-item .mark-word:not(.vertical) {
+		font-size: 120px;
+	}
+
+	.stat-item:nth-child(1),
+	.stat-item:nth-child(2) {
+		width: 50%;
+	}
+
+	.stat-info .stat-item p {
+		width: 206px;
+	}
+
+	.stat-info .stat-item > div.stat-border {
+		width: 213px;
+	}
+
+	.stat-item:nth-child(3) {
+		margin-left: 25%;
+		margin-top: 30%;
+		width: 50%;
+	}
+
+	.stat-info .stat-item .mark-word.vertical {
+		font-size: 20px;
+		line-height: 20px;
+		-webkit-transform-origin: 6% -20%;
+    	-moz-transform-origin: 6% -20%;
+    	-o-transform-origin: 6% -20%;
+    	transform-origin: 6% -20%;
+	}
+
+	#title #top-block, 
+	#title #idea-title {
+		margin: 0 !important;
+	}
+}
