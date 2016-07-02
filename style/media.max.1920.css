@@ -60,7 +60,8 @@
 	}
 
 	.block#devices .section-title {
-		margin-top: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	.devices-contact .discuss-title {
