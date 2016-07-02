@@ -104,22 +104,35 @@ body {
 
 .devices-list {
 	margin-top: 45px;
+	overflow: hidden;
+	width: 100%;
 }
 
 .device-item {
 	width: 24%;
-	height: 248px;
+	/*height: 248px;*/
 	float: left;
 }
 
-.device-item:before {
+.device-item .img-wrapper:before {
+	content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+.device-item .img-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+/*.device-item:before {
 	content: '';
 	display: block;
 	height: 100%;
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-}
+}*/
 
 .device-item .desc {
 	background-color: #fbef62;
@@ -138,6 +151,32 @@ body {
 .device-item .desc p {
 	font-size: 14px;
 	margin: 0 0 10px 0;
+}
+
+.device-item .img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-position: center;
+	background-size: cover;
+}
+
+.device-item:nth-child(1) .img {
+	background-image: url('./../images/devices-1.png');
+}
+
+.device-item:nth-child(2) .img {
+	background-image: url('./../images/devices-2.png');
+}
+
+.device-item:nth-child(3) .img {
+	background-image: url('./../images/devices-3.png');
+}
+
+.device-item:nth-child(4) .img {
+	background-image: url('./../images/devices-4.png');
 }
 
 .device-item:nth-child(1):before {
@@ -201,6 +240,7 @@ body {
 	height: 100%;
 	background-color: white;
 	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid white;
 	white-space: nowrap;
 }
 
