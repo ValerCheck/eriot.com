@@ -612,7 +612,7 @@ body {
 	border-right: 0px;
 }
 
-.person {
+/*.person {
 	margin-top: 30px;
 	background: no-repeat center top;
 	background-size: contain;
@@ -620,16 +620,39 @@ body {
 	display: inline-block;
 	width: 272px;
 	/*height: 304px;*/
-	height: 315px;
+	/*height: 315px;
+}*/
+
+.person {
+	position: relative;
+	width: 24%;
+	display: inline-block;
+	background-size: contain;
+	background-position: center top;
+	background-repeat: no-repeat;
 }
 
+.person:before {
+	content: '';
+	display: block;
+	padding-top: 115%;
+}
+
+.person > div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
 .person .call-to-action {
 	color: black;
 	font-family: 'Roboto Condensed';
 	display: inline-block;
-	width: inherit;
+	width: 100%;
 	vertical-align: middle;
+	position: relative;
 }
 
 .person .call-to-action span {
@@ -668,7 +691,7 @@ p.title {
 	height: auto;
 }
 
-.person .title {
+/*.person .title {
 	display: inline-block;
 	position: absolute;
 	bottom: 0;
@@ -679,11 +702,27 @@ p.title {
 	color: black;
 	font-size: 20px;
 	text-align-last: center;
+}*/
+
+.person .title {
+	margin-top: 85%;
+    background: #fce35d;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    text-align-last: center;
+}
+
+.person .title:before {
+	content: '';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .person .title span {
 	font-family: 'Roboto Condensed';
-	line-height: 80px;
+	/*line-height: 80px;*/
 	font-weight: bold;
 }
 
@@ -708,12 +747,12 @@ p.title {
 }
 
 .person:nth-child(4n+3) {
-	background-image: url(./../images/team-3.jpg);
-}
-
-.person:nth-child(4n+4) {
 	background-image: url(./../images/team-4.jpg);
 }
+
+/*.person:nth-child(4n+4) {
+	background-image: url(./../images/team-4.jpg);
+}*/
 
 
 .person:nth-child(5),
@@ -730,6 +769,7 @@ p.title {
 	font-size: 0;
 	text-align: justify;
 	text-align-last: justify;
+	margin-top: 15%;
 }
 
 .team-persons::nth-line(3) {

@@ -1,3 +1,29 @@
+@media only screen and (max-width: 1050px) {
+	.team-persons .person {
+		width: 49%;
+		margin-bottom: 2%;
+	}
+
+	#team .team-persons {
+		width: 70%;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.team-persons .person .call-to-action span:first-child {
+		font-size: 35px !important;
+	}
+
+	.team-persons .person .call-to-action span {
+		font-size: 30px !important;
+	}	
+
+	.team-persons .person .title {
+		font-size: 15px !important;
+	}
+}
+
 @media only screen and (max-width: 1440px) {
 	
 	.block .asideMenu {
@@ -14,13 +40,68 @@
     	margin-bottom: -100em;
 	}
 
+	/* EXPERTISE */
+
+	.block#expertise .content-wrapper section {
+		padding-top: 3%;
+	}
+
+	.expertise-blocks .block-pair {
+		width: 248px;
+	}
+
+	.expertise-blocks .block-pair .item {
+		width: 248px !important;
+		height: 248px !important;
+	}
+
+	.block-pair .item h3 {
+		padding-top: 50px;
+		padding-bottom: 15px;
+	}
+
+	.block-pair .item p {
+		font-size: 13px;
+		padding: 0 15px;
+	}
+
+	.expertise-blocks .block-pair .item form input {
+		padding: 5%;
+		width: 90%;
+	}
+
+	.expertise-blocks .block-pair:nth-child(2n+1) .item:last-child,
+	.expertise-blocks .block-pair:nth-child(3) .item:first-child,
+	.expertise-blocks .block-pair:nth-child(2) .item:first-child {
+		width: 250px !important;
+		height: 250px !important;	
+	}
+
+	/* EXPERTISE */
+
+	/* TEAM */
+
+	.team-persons .person .call-to-action span:first-child {
+		font-size: 40px;
+	}
+
+	.team-persons .person .call-to-action span {
+		font-size: 34px;
+	}	
+
+	.team-persons .person .title {
+		font-size: 17px;
+	}
+
+	/* TEAM */
+
 	.devices-list .device-item .desc h3 {
 		font-size: 17px;
 	}
 
-	.block-pair .item.right {
+	/*.block-pair .item.right {
 		float: left;
-	}
+	}*/
 
 	.content .background img {
 		display: none !important;
@@ -43,8 +124,16 @@
 		height: 1030px;
 	}
 
-	#services {
+	#team {
 		height: 800px !important;
+	}
+
+	#team .content .background {
+		height: 900px;
+	}
+
+	.block#expertise {
+		height: 1400px;
 	}
 
 	.block#services .content-wrapper section {
@@ -69,12 +158,21 @@
 		font-family: 'Roboto Condensed';
 	}
 
+	#expertise .contact-us .title {
+		font-size: 34px;
+	}
+
+	.contact-us .contact-us-btn {
+		 padding: 37px 30px;
+	}
+
 	.devices-contact .contact-us-btn {
 	    padding: 37px 23px;
 	}
 
 	#team .content .background {
-		background: url('./../images/team-bg.png') 100% no-repeat;
+		background: url('./../images/team-bg.png') center no-repeat !important;
+		background-size: cover !important;
 	}
 
 	#devices .content .background {	
