@@ -113,6 +113,39 @@
 
 	/* AWARDS */
 
+	/* CONTACTS */
+
+	.address .address__content {
+		padding: 30px 40px;
+	}
+
+	.address__content .our-contacts, 
+	.address__content .our-address {
+	    margin-bottom: 20px;
+	}
+
+	.address__content .contacts-form textarea {
+		height: 50px;
+		margin-bottom: 10px;
+	}
+
+	.address__content .contacts-form input, 
+	.address__content .contacts-form textarea {
+		padding: 10px;
+	}
+
+	/*.project-item .item-logo {
+		height: auto;
+		width: 52px;
+	}
+
+	.project-item .item-text {
+		width: auto;
+		height: 20px;
+	}*/
+
+	/* CONTACTS */
+
 	.devices-list .device-item .desc h3 {
 		font-size: 17px;
 	}
@@ -148,6 +181,14 @@
 
 	#team .content .background {
 		height: 900px;
+	}
+
+	#contacts {
+		height: 885px !important;
+	}
+
+	#contacts .content .background {
+		height: 985px;
 	}
 
 	.block#expertise {
@@ -204,7 +245,8 @@
 	}
 
 	#contacts .content .background {
-		background: url('./../images/contacts-bg.png') 50%/100% no-repeat;
+		background: url('./../images/contacts-bg.png') center no-repeat !important;
+		background-size: cover !important;
 		top: -100px;
 	}
 

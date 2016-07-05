@@ -993,6 +993,16 @@ a[href^="https://maps.google.com/maps"]
 	vertical-align: middle;
 }
 
+.project-item .item-logo {
+	height: auto;
+	width: 6%;
+}
+
+.project-item .item-text {
+	width: 17%;
+	height: auto;
+}
+
 .our-contacts > h4,
 .our-address > h4,
 .write-us
