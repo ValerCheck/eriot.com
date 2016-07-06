@@ -9,6 +9,39 @@
 		margin: auto;
 	}
 
+	#expertise .expertise-blocks .block-pair {
+		width: 500px;
+	}
+
+	#expertise .block-pair:nth-child(2) .item {
+		float: left;
+	}
+
+	.block#expertise {
+	    height: 1285px !important;
+	}
+
+}
+
+@media only screen and (max-width: 1200px) {
+	.team-persons .person .call-to-action span:first-child {
+		font-size: 35px !important;
+	}
+
+	.team-persons .person .call-to-action span {
+		font-size: 30px !important;
+	}	
+
+	.team-persons .person .title {
+		font-size: 15px !important;
+	}
+
+	.address__content .contacts-form input:nth-child(1),
+	.address__content .contacts-form input:nth-child(2) {
+		width: 49%;
+		display: inline-block;
+	}
+
 	/* TITLE */
 
 	#title #idea-title {
@@ -33,26 +66,54 @@
 
 	/* TITLE */
 
-}
+	/* SERVICES */
 
-@media only screen and (max-width: 1200px) {
-	.team-persons .person .call-to-action span:first-child {
-		font-size: 35px !important;
+	.services-content .slider-wrapper {
+		width: 40.4269%
 	}
 
-	.team-persons .person .call-to-action span {
-		font-size: 30px !important;
-	}	
-
-	.team-persons .person .title {
-		font-size: 15px !important;
+	.services-content #services-steps {
+		padding-left: 3.446%;
+	    width: 56%;
 	}
 
-	.address__content .contacts-form input:nth-child(1),
-	.address__content .contacts-form input:nth-child(2) {
-		width: 49%;
-		display: inline-block;
+	/* SERVICES */
+
+	/* DEVICES */
+
+	#devices .content .background {
+		height: 860px !important;
 	}
+
+	#devices .devices-contact .discuss-title {
+		font-size: 35px;
+		line-height: 36px;
+	}
+
+	#devices .devices-contact .contact-us-btn {
+	    padding: 31px 23px;
+	}
+
+	.block#devices .devices-contact {
+	    margin-top: 25%;
+	}
+
+	.block#devices .section-title {
+		margin: 0;
+		font-size: 60px;
+	}
+
+	.block#devices .devices-list {
+		margin-top: 2%;
+	}
+
+
+	#devices .devices-list .device-item .desc {
+	    padding: 15px 5px;
+	    padding-bottom: 100em;
+	}
+
+	/* DEVICES */
 }
 
 @media only screen and (max-width: 1440px) {
@@ -73,8 +134,12 @@
 
 	/* EXPERTISE */
 
+	#expertise .exp-line-area {
+		margin-top: 30px;
+	}
+
 	.block#expertise .content-wrapper section {
-		padding-top: 3%;
+		padding-top: 0;
 	}
 
 	.expertise-blocks .block-pair {
@@ -206,7 +271,7 @@
 	}
 
 	#devices {
-		height: 900px !important;
+		height: 750px !important;
 	}
 
 	#devices .content .background {
@@ -233,6 +298,10 @@
 		height: 1400px;
 	}
 
+	.block#services {
+		height: 800px;
+	}
+
 	.block#services .content-wrapper section {
 	    padding-top: 8%;
 	}
@@ -253,18 +322,31 @@
 	.devices-contact .discuss-title {
 		font-size: 40px;
 		font-family: 'Roboto Condensed';
+		width: 72%;
 	}
 
-	#expertise .contact-us .title {
+	.block#expertise .contact-us .title {
 		font-size: 34px;
+		line-height: 45px;
+		width: 65%;
 	}
 
-	.contact-us .contact-us-btn {
-		 padding: 37px 30px;
+	.block#expertise .contact-us,
+	.block#expertise .expertise-blocks {
+		margin-top: 50px;
+	}
+
+	#expertise .contact-us-btn {
+		width: 35%;
+	    box-sizing: border-box;
+	    padding: 30px 23px;
 	}
 
 	.devices-contact .contact-us-btn {
 	    padding: 37px 23px;
+	    width: 28%;
+	    box-sizing: border-box;
+	    text-align: center;
 	}
 
 	#team .content .background {
@@ -273,7 +355,8 @@
 	}
 
 	#devices .content .background {	
-		background: url('./../images/devices-bg.png') 50%/100% no-repeat;
+		background: url('./../images/devices-bg.png') right no-repeat !important;
+		background-size: cover !important;
 	}
 
 	#title .content .background {

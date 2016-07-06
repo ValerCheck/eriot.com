@@ -564,11 +564,41 @@ body {
 	display: inline-block;
 	margin: 0;
 	vertical-align: middle;
+	position: relative;
 }
 
 .expertise-item.middle {
 	background-image: url('./../images/expertise-line.png');
 	background-repeat: repeat-x;
+}
+
+.expertise-item > div > :not(.line):after {
+	font-family: 'Roboto Condensed';
+	font-size: 13px;
+	color: black;
+	position: absolute;
+	bottom: -15px;
+	text-align: center;
+	right: 0;
+	width: 100%;
+}
+
+.expertise-item .medical-devices:after {
+	content : 'Medical devices';
+	text-align: right !important;
+}
+
+.expertise-item .ereaders-tablets:after {
+	content : 'eReaders and Tablets';
+}
+
+.expertise-item .wearable-iot:after {
+	content : 'Wearable IoT';
+}
+
+.expertise-item .telecom:after {
+	content : 'Telecom and secured communications';
+	bottom: -30px !important;
 }
 
 .expertise-line.middle:last-child {
@@ -1557,6 +1587,7 @@ a[href^="https://maps.google.com/maps"]
 	position: absolute;
 	height: 52px;
 	left: 60px;
+	top:0;
 	width: 100%;
 }
 
