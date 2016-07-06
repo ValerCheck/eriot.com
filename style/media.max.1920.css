@@ -47,6 +47,12 @@
 	.team-persons .person .title {
 		font-size: 15px !important;
 	}
+
+	.address__content .contacts-form input:nth-child(1),
+	.address__content .contacts-form input:nth-child(2) {
+		width: 49%;
+		display: inline-block;
+	}
 }
 
 @media only screen and (max-width: 1440px) {
@@ -141,12 +147,13 @@
 	/* CONTACTS */
 
 	.address .address__content {
-		padding: 30px 40px;
+		padding: 30px 30px;
 	}
 
 	.address__content .our-contacts, 
 	.address__content .our-address {
 	    margin-bottom: 20px;
+	    width: 50%;
 	}
 
 	.address__content .contacts-form textarea {
@@ -156,28 +163,34 @@
 
 	.address__content .contacts-form input, 
 	.address__content .contacts-form textarea {
-		padding: 10px;
+		padding: 8px 10px;
 	}
 
-	/*.project-item .item-logo {
-		height: auto;
-		width: 52px;
+	.address__content .our-contacts > span, 
+	.address__content .our-address > span {
+		font-size: 14px;
 	}
 
-	.project-item .item-text {
-		width: auto;
-		height: 20px;
-	}*/
+	.address__content .contacts-form input {
+		margin-bottom: 5px;
+	}
+
+	.address__content .our-contacts > h4, 
+	.address__content .our-address > h4,
+	.address__content .write-us {
+		font-size: 18px;
+	}
+
+	.address__content .write-us {
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
+	}
 
 	/* CONTACTS */
 
 	.devices-list .device-item .desc h3 {
 		font-size: 17px;
 	}
-
-	/*.block-pair .item.right {
-		float: left;
-	}*/
 
 	.content .background img {
 		display: none !important;
