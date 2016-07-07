@@ -574,13 +574,13 @@ body {
 
 .expertise-item > div > :not(.line):after {
 	font-family: 'Roboto Condensed';
-	font-size: 13px;
+	font-size: 16px;
 	color: black;
 	position: absolute;
-	bottom: -15px;
+	bottom: -20px;
 	text-align: center;
 	right: 0;
-	width: 100%;
+	width: 105%;
 }
 
 .expertise-item .medical-devices:after {
@@ -598,7 +598,7 @@ body {
 
 .expertise-item .telecom:after {
 	content : 'Telecom and secured communications';
-	bottom: -30px !important;
+	bottom: -40px !important;
 }
 
 .expertise-line.middle:last-child {
@@ -1353,6 +1353,7 @@ a[href^="https://maps.google.com/maps"]
 }
 
 .menu-block-title span{
+	width: 80px;
 	display: inline-block;
 	text-transform: uppercase;
 	vertical-align: middle;

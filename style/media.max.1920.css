@@ -7,6 +7,7 @@
 	#team .team-persons {
 		width: 70%;
 		margin: auto;
+		margin-top: 30px;
 	}
 
 	#expertise .expertise-blocks .block-pair {
@@ -21,6 +22,55 @@
 	    height: 1285px !important;
 	}
 
+	.block#expertise .content-wrapper section {
+		padding-top: 0 !important;
+	}
+
+	.awards .awards-items, .cases .cases-items {
+	    margin-left: 3% !important;
+	}
+
+	.section-title {
+		font-size: 60px !important;
+	}
+
+	.block#awards-cases .content-wrapper section{
+	    padding-right: 12.423%;
+	}
+
+	#awards-cases .awards .float-title, 
+	#awards-cases .cases .float-title {
+	    width: 200px !important;
+	}
+
+	.award-item img:last-child {
+		width: 100%;
+	}
+
+	#awards-cases .awards-items, 
+	#awards-cases .cases-items {
+	    width: 65%;
+	}
+
+	.cases .cases-items {
+		height: 300px;
+	}
+
+	#awards-cases {
+		height: 850px !important;
+	}
+
+	#contacts .address .address__content {
+	    padding: 5px 20px;
+	}
+
+	.block#contacts {
+		height: 800px !important;
+	}
+
+	#contacts .content .background {
+		height: 900px !important;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -139,7 +189,7 @@
 	}
 
 	.block#expertise .content-wrapper section {
-		padding-top: 0;
+		padding-top: 10%;
 	}
 
 	.expertise-blocks .block-pair {

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-bottom"
+			],
+			[
 				"max-",
 				"max-width"
 			],
@@ -428,10 +432,6 @@
 				"border-radius"
 			],
 			[
-				"margin",
-				"margin-left"
-			],
-			[
 				"inl",
 				"inline-block"
 			],
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 14807,
+				"buffer_size": 14864,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,7 +547,7 @@
 			"file": "style/decoration.css",
 			"settings":
 			{
-				"buffer_size": 25201,
+				"buffer_size": 25921,
 				"line_ending": "Windows"
 			}
 		},
@@ -555,7 +555,7 @@
 			"file": "style/media.max.1920.css",
 			"settings":
 			{
-				"buffer_size": 4735,
+				"buffer_size": 8215,
 				"line_ending": "Windows"
 			}
 		}
@@ -866,6 +866,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"expertise-item",
+			".contact-us",
+			".exp-line-area",
+			"expertise",
+			".block#exp",
+			"line-height",
+			"discuss",
+			".block#services",
+			"write",
+			"1024px",
 			"48%",
 			"person",
 			"call-to-action",
@@ -983,17 +993,7 @@
 			"#active",
 			"active",
 			"selectedVacancyFromAll",
-			"item",
-			"add-new",
-			"item",
-			"add",
-			".add-new-vacancy",
-			".vac-item",
-			"vac-item",
-			"vacancy-form",
-			"vac-list",
-			"vacancies",
-			"editor"
+			"item"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1043,7 +1043,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1052,15 +1052,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14807,
+						"buffer_size": 14864,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10732,
-								10732
+								10561,
+								10561
 							]
 						],
 						"settings":
@@ -1070,7 +1070,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5748.0,
+						"translation.y": 5598.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1104,13 +1104,7 @@
 					},
 					"stack_index": 4,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 2,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 2,
 					"file": "js/LandingController.js",
@@ -1146,15 +1140,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25201,
+						"buffer_size": 25921,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19907,
-								19909
+								21526,
+								21526
 							]
 						],
 						"settings":
@@ -1164,10 +1158,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 18453.0,
+						"translation.y": 19885.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1176,26 +1170,27 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4735,
+						"buffer_size": 8215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								81,
-								81
+								924,
+								924
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 305.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1218,18 +1213,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.451072961373,
 			1.0
 		],
 		"rows":
@@ -1281,7 +1269,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
