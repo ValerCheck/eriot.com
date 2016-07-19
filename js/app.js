@@ -133,33 +133,54 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.step-slider').on('beforeChange',function(event,slick,current,next){
-		if (next < current) {
-			var format = '.steps-figures li:nth-child({number})';
-			var elements = '';
-			for (var i = next+1; i < 4; i++) {
-				var selector = format.replace('{number}',i+1);
-				if ($(selector + ' .step-color.front').css('width') == 0) continue;
-				elements += (elements == '') ? 
-				elements + selector + ' .step-color.front' : 
-				',' + selector + ' .step-color.front';
-				$(selector + ' .step-text .text-upper').removeClass('mark-word');
-			}
-			$(elements).animate({
-				width: '0'
-			}, 3000);
-			return;
-		}
-		var el = $('.steps-figures li:nth-child('+ (next + 1) +')');
-		el.find('.step-text .text-upper').addClass('mark-word');
-		el.find('.step-color.front').animate({
-			width: '100%'
-		}, 3000);
-	});
-
 	$('.step-slider').slick({
 		nextArrow: $('.services-next'),
   		prevArrow: $('.services-prev')
+	});
+
+	$('.step-slider').on('beforeChange',function(event,slick,current,next){
+
+		var START = 0, END = 3;
+
+		var format	  = '.steps-figures li:nth-child({number})', 
+			elements  = '';
+
+		var addComma = function(){
+			return (elements == '') ? '' : ',';
+		}
+
+		var getOptions = function() {
+			var condRemove = (next == START && current == END);
+			var condAdd = (next == END && current == START);
+			return 	condRemove 	? {method: 'removeClass',width:'0'} : 
+					condAdd 	? {method:'addClass',width:'100%'} 	: 
+					null;
+		}
+
+		var opt = getOptions();
+
+		if (opt) {
+
+			for (var i = START + 2; i <= END + 1; i++) {
+				var selector = format.replace('{number}',i);
+				elements += addComma() + selector + ' .step-color.front';
+				$(selector + ' .step-text .text-upper')[opt.method]('mark-word');
+			}
+
+			$(elements).animate({
+				width: opt.width
+			}, 1500);
+			return;
+		}
+
+		var isNext = next > current;
+
+		var el = $('.steps-figures li:nth-child('+ (isNext ? next + 1 : next + 2) +')');
+		el.find('.step-text .text-upper')[isNext ? 'addClass' : 'removeClass']('mark-word');
+		el.find('.step-color.front').animate({
+			width: (isNext ? '100%' : '0')
+		}, 1500);
+		
 	});
 
 	initializeMap();

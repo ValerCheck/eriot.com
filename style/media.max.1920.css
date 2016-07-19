@@ -321,7 +321,7 @@
 	}
 
 	#devices {
-		height: 750px !important;
+		height: 850px !important;
 	}
 
 	#devices .content .background {
@@ -387,7 +387,8 @@
 	}
 
 	#expertise .contact-us-btn {
-		width: 35%;
+		width: 30%;
+		text-align: center;
 	    box-sizing: border-box;
 	    padding: 30px 23px;
 	}
