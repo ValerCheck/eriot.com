@@ -486,6 +486,94 @@
 
 @media only screen and (max-width: 768px) {
 
+	.block#contacts .section-title {
+	    padding-bottom: 10px;
+	}
+
+	.block#contacts .content-wrapper section {
+	    height: 94%;
+	    padding-top: 6%;
+	}
+
+	.address__content .contacts-form input:nth-child(1),
+	.address__content .contacts-form input:nth-child(2) {
+ 	   width: 49.5%;
+	}
+
+	#contacts .location {
+		border: 1px solid #ffde2b;
+	}
+
+	#contacts .location,
+	#contacts .address {
+		width: 100%;
+	}
+
+	#contacts .location {
+		height: 250px;
+	}
+
+	.location:before, 
+	#contacts .address:before {
+		padding-top: 0;
+	}
+
+	#awards-cases {
+	    height: 910px !important;
+	}
+
+	#awards-cases .award-item span {
+	    margin: 0px 0 10px 0;
+	}
+
+	#awards-cases .cases {
+		margin-top: 10px;
+	}
+
+	#awards-cases .awards-items, #awards-cases .cases-items {
+	    width: 70%;
+	    margin-left: 15% !important;
+	    margin-top: 10px;
+	}
+
+	#awards-cases .awards .line-divider {
+	    margin: 0;
+	}
+
+	#awards-cases .awards .float-title, #awards-cases .cases .float-title {
+	    width: 70% !important;
+	    text-align: center;
+	    margin-left: 15%;
+	    margin-top: 0;
+	}
+
+	.block#awards-cases .content-wrapper section {
+	    padding-top: 0%;
+	}
+
+	#team {
+		height: 670px !important;
+	}
+
+	#team .content .background {
+	    height: 700px;
+	}
+
+	.block#expertise {
+	    height: 1440px !important;
+	}
+
+	#expertise .contact-us-btn {
+	    width: 39%;
+	    padding: 25px 15px;
+	}
+
+	.block#expertise .contact-us .title {
+	    font-size: 27px;
+	    line-height: 37px;
+	    width: 61%;
+	}
+
 	#expertise .exp-line-area:before {
 		height: 0;
 	}

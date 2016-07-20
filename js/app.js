@@ -63,7 +63,12 @@ function initializeMap() {
 $(document).ready(function(){
 
 	$(document).scroll(function(){
-		if ($(document).scrollTop()+$(window).height() - 100 >= $('.steps-figures').offset().top) {
+
+		var expLineTrigger = parseFloat($('.line:last .color').css('width'));
+		var stepsTrigger = parseFloat($('.steps-figures li:first-child .step-color.front').css('width'));
+
+		if ($(document).scrollTop()+$(window).height() - 100 >= $('.steps-figures').offset().top &&
+			stepsTrigger == 0) {
 			var el = $('.steps-figures li:nth-child(1)');
 			el.find('.step-text .text-upper').addClass('mark-word');
 			el.find('.step-color.front').animate({
@@ -73,14 +78,11 @@ $(document).ready(function(){
 
 		var filling = false;
 
-		var expLineTrigger = parseFloat($('.line:last .color').css('width'));
-
 		if ($(document).scrollTop()+$(window).height() - 100 >= $('.exp-line-area').offset().top &&
 			expLineTrigger == 0) {
 			
 			var lineElements = $('.exp-line-area > *');
 			var elements = [];
-			var lengths = [];
 			var time = 3000;
 
 			var addElements = function(obj) {
@@ -102,14 +104,9 @@ $(document).ready(function(){
 
 			addElements(lineElements);
 
-			elements.forEach(function(elem){
-				lengths.push(parseFloat($(elem).parent().css('width')));
-			})
-
-			/*for (var i = 0; i < elements.length; i++) {
-				var parent = $(elements[i]).parent();
-				lengths.push(parseFloat(parent.css('width')));
-			}*/
+			var lengths = elements.map(function(elem){
+				return parseFloat($(elem).parent().css('width'));
+			});
 
 			var velocity = lengths.reduce(function(a,b){return a+b;},0)/time;
 
