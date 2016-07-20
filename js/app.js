@@ -73,63 +73,63 @@ $(document).ready(function(){
 
 		var filling = false;
 
-		if ($(document).scrollTop()+$(window).height() - 100 >= $('.exp-line-area').offset().top) {
+		var expLineTrigger = parseFloat($('.line:last .color').css('width'));
+
+		if ($(document).scrollTop()+$(window).height() - 100 >= $('.exp-line-area').offset().top &&
+			expLineTrigger == 0) {
 			
+			var lineElements = $('.exp-line-area > *');
 			var elements = [];
-			var notColor = [];
-			var lengths  = [];
+			var lengths = [];
 			var time = 3000;
-			
-			var condElem = $('.exp-line-area > div.line:last-child .color');
-			
-			if (parseInt(condElem.css('width')) == 0) {
 
-				function addElementSelector(iter, k1, k2, offset, callbacks) {
-					if (!iter) return;
-					for (var i = 1; i < 3; i++) {
-						elements.push('#'+ (2*i+k1) 	+ '.color');
-						elements.push('.expertise-item:nth-child('+(i+offset)+') .front-color');
-						elements.push('#'+ (2*i+k2) + '.color');
-					}
-					if (callbacks.length > 0) callbacks.pop()();
-					addElementSelector(iter-1,k1 + 4,k2+4,offset + 4, callbacks);
+			var addElements = function(obj) {
+				if (!obj) return;
+				if (obj.className == 'color' ||
+					obj.className == 'front-color') {
+					elements.push(obj);
+					return;
 				}
-
-				elements.push('.exp-line-area > div.line:first .color');
-
-				addElementSelector(2,-1,0,1,[function(){
-					elements.push('.exp-line-area .line.for-mobile:first .color');
-					elements.push('.exp-line-area .line.for-mobile:last .color');
-				}]);
-
-				elements.push('.exp-line-area > div.line:last .color');
-
-				for (var i = 0; i < elements.length; i++) {
-					var elem = $(elements[i]);
-					var parent = elem.parent();
-					lengths.push(parseFloat(parent.css('width')));
+				var children = (typeof(obj.children) == 'object') ? 
+								obj.children : 
+								obj.children();
+				if (children.length) {
+					var objs = [];
+					for (var i = 0; i < children.length; i++)
+						addElements(children[i]);
 				}
-
-				var velocity = lengths.reduce(function(a,b){return a+b;},0)/time;
-
-				var speeds = lengths.map(function(el){ return el/velocity; });
-				
-				function fill(id){
-					if (!filling) filling = true;
-				    if(id<elements.length){
-				    	var elem = $(elements[id]);
-				    	if (elem.css('display') == 'none') fill(id+1);
-				    	else {
-				    		var percent = '100%';
-				    		if (elem.hasClass('front-color')) percent = '99%';
-				    		elem.animate({width:percent}, speeds[id],"linear", function(){ fill(id+1)});
-				    	} 
-				    } 
-				}
-
-				if (!filling) fill(0);
-				
 			}
+
+			addElements(lineElements);
+
+			elements.forEach(function(elem){
+				lengths.push(parseFloat($(elem).parent().css('width')));
+			})
+
+			/*for (var i = 0; i < elements.length; i++) {
+				var parent = $(elements[i]).parent();
+				lengths.push(parseFloat(parent.css('width')));
+			}*/
+
+			var velocity = lengths.reduce(function(a,b){return a+b;},0)/time;
+
+			var speeds = lengths.map(function(el){ return el/velocity; });
+			
+			function fill(id){
+				if (!filling) filling = true;
+			    if(id<elements.length){
+			    	var elem = $(elements[id]);
+			    	if (elem.css('display') == 'none') fill(id+1);
+			    	else {
+			    		var percent = '100%';
+			    		if (elem.hasClass('front-color')) percent = '99%';
+			    		elem.animate({width:percent}, speeds[id],"linear", function(){ fill(id+1)});
+			    	} 
+			    } 
+			}
+
+			if (!filling) fill(0);
+
 		}
 	});
 

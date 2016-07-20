@@ -119,12 +119,25 @@
 	/* SERVICES */
 
 	.services-content .slider-wrapper {
-		width: 40.4269%
+		width: 48.4269%
 	}
 
 	.services-content #services-steps {
-		padding-left: 3.446%;
-	    width: 56%;
+		padding-left: 2.446%;
+	    width: 49%;
+	}
+
+	.slider-wrapper .services-next .label, 
+	.slider-wrapper .services-prev .label {
+	    padding: 0 15px;
+	}
+
+	.slider-wrapper {
+		position: relative;
+	}
+
+	#services-steps .steps-figures {
+		padding-left: 10px;
 	}
 
 	/* SERVICES */
@@ -473,6 +486,58 @@
 
 @media only screen and (max-width: 768px) {
 
+	#expertise .exp-line-area:before {
+		height: 0;
+	}
+
+	#expertise .exp-line-area {
+		height: auto;
+	}
+
+	#expertise .exp-line-area > * {
+		margin-bottom: 50px;
+	}
+
+	.exp-line-area .expertise-item {
+		height: 103px;
+	}
+
+	.exp-line-area .for-mobile[id='1'],
+	.exp-line-area .for-mobile[id='2'],
+	.exp-line-area .for-mobile[id='5'],
+	.exp-line-area .for-mobile[id='6'] {
+	    display: inline-block;
+	    width: 15%;
+	}
+
+	.exp-line-area .for-mobile[id='3'],
+	.exp-line-area .for-mobile[id='4'] {
+		display: inline-block;
+		width: 20%;
+	}
+
+	.block#devices .devices-contact {
+	    margin-top: 30%;
+	}
+
+	#devices .devices-contact .discuss-title {
+	    font-size: 28px;
+	    line-height: 28px;
+	}
+
+	.devices-contact .discuss-title {
+	    width: 70%;
+	}
+
+	#devices .devices-contact .contact-us-btn {
+	    padding: 31px 20px;
+	    width: 30%;
+	}
+
+	.block#devices .content-wrapper section {
+	    padding-right: 10%;
+	}
+
 	#title #idea-title {
 		font-size: 40px;
 	}
@@ -500,6 +565,10 @@
 		width: 50%;
 	}
 
+	.block#services .content-wrapper section {
+		padding-top: 15%;
+	}
+
 	.stat-info .stat-item .mark-word.vertical {
 		font-size: 20px;
 		line-height: 20px;
@@ -507,6 +576,17 @@
     	-moz-transform-origin: 6% -20%;
     	-o-transform-origin: 6% -20%;
     	transform-origin: 6% -20%;
+	}
+
+	.block#services {
+	    height: 700px;
+	}
+
+	.float-area.services-buttons {
+	    padding-top: 20px;
+	    position: absolute;
+	    right: -100%;
+	    bottom: 50px;
 	}
 
 	#title #top-block, 
