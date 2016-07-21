@@ -692,6 +692,143 @@
 	.projects-list {
 		line-height: 0;
 	}
+}
+
+@media only screen and (max-width: 375px) {
+	.block#devices .line-divider, 
+	.block#expertise .line-divider, 
+	.block#team .line-divider {
+		width: 100%;
+	}
+
+	.block#devices .devices-list .device-item .desc {
+		width: 0;
+	}
+
+	.devices-list .device-item .img-wrapper {
+		width: 35%;	
+	}
+
+	.devices-list .device-item .desc h3 {
+	    font-size: 16px;
+	}
+
+	.block#expertise .exp-line-area + .content-wrapper section {
+	    padding-right: 13.423%;
+	}
+
+	#team .team-persons {
+	    width: 75%;
+	}
+
+	.block#title .content-wrapper section {
+	    padding-right: 13.423%;
+	}
+
+	.services-content .slider-wrapper {
+	    width: 95%;
+	    padding-right: 5%;
+	}
+
+	.cases .case .desc h4 {
+	    text-transform: uppercase;
+	    font-size: 18px;
+	    padding: 10px 20px 0 20px;
+	}
+
+	.cases .case .desc p {
+	    padding: 0 20px 20px 20px;
+	}
+
+	.block#awards-cases {
+	    height: 880px !important;
+	}
+
+	.address__content .contacts-form input:nth-child(1), 
+	.address__content .contacts-form input:nth-child(2) {
+	    width: 48.5% !important;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	#top-block img {
+	    height: auto !important;
+	    width: 60% !important;
+	    padding-left: 15% !important;
+	}
+
+	#title .contacts-text {
+		width: 100%;
+    	text-align: center;
+    	background-position: 68% center;
+	}
+
+	section #top-block {
+	    padding-bottom: 25px;
+	}
+
+	.block#title .content-wrapper section {
+	    padding-right: 3.423%;
+	}
+
+	.slider-wrapper .services-prev .label {
+	    padding: 0 5px;
+	}
+
+	.slider-wrapper .services-next .label, .slider-wrapper .services-prev .label {
+	    padding: 0 5px;
+	}
+
+	.block#services {
+	    height: 1120px !important;
+	}
+
+	.devices-list .device-item .img-wrapper {
+	    width: 40%;
+	}
+
+	.devices-list .device-item .desc h3 {
+	    font-size: 15px;
+	    margin-bottom: 0;
+	}
+
+	.device-item .desc p {
+		font-size: 13px;
+		margin: 0 0 10px 0;
+		word-break: break-all;
+	}
+
+	section.block#devices .content-wrapper section,
+	.block#expertise .exp-line-area + .content-wrapper section,
+	.block#team .content-wrapper section,
+	.block#awards-cases .content-wrapper section {
+	    padding-right: 2%;
+	}
+
+	.block#contacts .content-wrapper section {
+	    padding-right: 2%;
+	}
+
+	.section-title {
+	    font-size: 50px !important;
+	}
+
+	.block#team .content-wrapper {
+	    margin-top: 20%;
+	}
+
+	.block#team .content .background {
+	    height: 1180px;
+	}
+
+	.address__content .contacts-form input:nth-child(1), 
+	.address__content .contacts-form input:nth-child(2) {
+	    width: 49% !important;
+	}
+
+	section.block#contacts .content-wrapper section {
+	    padding-top: 12%;
+	}
 
 }
 
