@@ -448,6 +448,7 @@
 }
 
 @media only screen and (max-width: 425px) {
+
 	#title .stat-info .stat-item {
 		width: 100%;
 		margin-left: 0;
@@ -464,6 +465,234 @@
 	#title .stat-item > div.stat-border {
 		height: 175px;
 	}
+
+	.services-content #services-steps {
+		float: right;
+	    padding-left: 0 !important;
+	    width: 100%;
+	}
+
+	.services-content .slider-wrapper {
+	    width: 100%;
+	    float: right;
+	}
+
+	.block nav.asideMenu {
+		width: 60px;
+	}
+
+	.asideMenu .menu-block-title span {
+    	width: 60px;
+    }
+
+    #title {
+	    height: 960px !important;
+	}
+
+	.block#services .section-title, 
+	.block#contacts .section-title {
+	    padding-bottom: 25px;
+	}
+
+	.block#services {
+	    height: 1000px !important;
+	}
+
+	#devices {
+	    height: 1000px !important;
+	}
+
+	.slider-wrapper .float-area.services-buttons {
+	    padding-top: 0;
+	    padding-bottom: 10px;
+	    position: relative;
+	    right: 0;
+	    bottom: 0;
+	}
+
+	.devices-list .device-item {
+	    width: 100%;
+	    position: relative;
+	}
+
+	.devices-list .device-item:before,
+	.devices-list .device-item:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.devices-list .device-item .img-wrapper {
+	    position: relative;
+	    width: 30%;
+	    float: left;
+	}
+
+	#devices .devices-list .device-item .desc {
+	    padding: 0;
+	    padding-bottom: 100em;
+	    padding-bottom: 0;
+	    margin-bottom: 0;
+	    width: 67%;
+	    float: left;
+	}
+
+	.device-item:nth-child(n) {
+		margin-left: 0 !important;
+		margin-bottom: 10px;
+	}
+
+	#devices .devices-contact .discuss-title {
+		text-align: center;
+		width: 100%;
+	}
+
+	.block#devices .devices-contact {
+	    margin-top: 60% !important;
+	}
+
+	#expertise .section-title {
+		margin-top: 60px;
+	}
+
+	.block#devices .devices-contact .contact-us-btn {
+		width: 100%;
+	}
+
+	#devices .content .background {
+	    height: 1100px !important;
+	}
+
+	.desc-wrapper {
+		padding-left: 3%;
+		position: absolute;
+		height: 100%;
+		background-color: #fbef62;
+	}
+
+	.exp-line-area .expertise-item:nth-child(2) {
+		width: 50% !important;
+	}
+
+	.exp-line-area .line:first-child {
+		width: 30% !important;
+	}
+	
+	.exp-line-area .for-mobile[id='1'] {
+		width: 20% !important;
+	}
+
+	.exp-line-area .for-mobile[id='2'],
+	.exp-line-area .for-mobile[id='4'],
+	.exp-line-area .for-mobile[id='6'] {
+	    width: 40% !important;
+	}
+
+	.exp-line-area .line:last-child,
+	.exp-line-area .for-mobile[id='3'],
+	.exp-line-area .for-mobile[id='5'] {
+		width: 20% !important;
+	}
+
+	#expertise .exp-line-area .expertise-item {
+		width: 40%;
+	}
+
+	.block#expertise .contact-us .title {
+		width: 100% !important;
+		text-align: center;
+	}
+
+	#expertise .contact-us-btn,
+	#expertise .contact-us {
+		width: 100% !important;
+	}
+
+	#expertise .expertise-blocks .block-pair {
+	    width: 250px;
+	}
+
+	section.block#expertise {
+	    height: 2650px !important;
+	}
+
+	.team-persons .person {
+	    width: 100%;
+	}
+
+	.block#team {
+	    height: 1100px !important;
+	}
+
+	.block#team .content .background {
+	    height: 100%;
+	}
+
+	.block#awards-cases .awards-items, 
+	.block#awards-cases .cases-items {
+	    width: 100%;
+	    margin-left: 0 !important;
+	    margin-top: 10px;
+	}
+
+	.block#awards-cases .awards .float-title, 
+	.block#awards-cases .cases .float-title {
+	    width: 100% !important;
+	    margin-left: 0;
+	    margin-top: 0;
+	}
+
+	.awards-items .award-item > img:first-child {
+		height: 100px;
+		width: auto;
+	}
+
+	.cases-items .case .desc {
+		height: 90px;
+	}
+
+	.address__content .our-contacts, .address__content .our-address {
+	    margin-bottom: 10px;
+	    width: 100%;
+	}
+
+	.address__content .contacts-form input:nth-child(1), 
+	.address__content .contacts-form input:nth-child(2) {
+	    width: 49% !important;
+	}
+
+	.block#contacts {
+	    height: 890px !important;
+	}
+
+	#contacts .content .background {
+	    height: 991px !important;
+	}
+
+	.projects-list .project-item .item-logo {
+	    width: 12%;
+	}
+
+	.projects-list .project-item .item-text {
+	    width: 35%;
+	}
+
+	.project-item > img {
+		padding-bottom: 15px;
+	}
+
+	#contacts .our-projects {
+		bottom: initial;
+	}
+
+	#contacts .our-projects > h4 {
+	    margin-top: 10px;
+	}
+
+	.projects-list {
+		line-height: 0;
+	}
+
 }
 
 @media only screen and (max-width: 700px) {
