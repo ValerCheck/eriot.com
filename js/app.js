@@ -1,5 +1,13 @@
 var eriotApp = angular.module('eriotApp',[]);
 
+function loadMapScript() {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.id = "googleMaps"
+	script.src = "https://maps.googleapis.com/maps/api/js?sensor=false&callback=initializeMap";
+	document.body.appendChild(script);
+}
+
 function initializeMap() {
 	var pos = new google.maps.LatLng(50.4251127,30.5331364);
 	
@@ -180,5 +188,6 @@ $(document).ready(function(){
 		
 	});
 
-	initializeMap();
+	loadMapScript();
+	//initializeMap();
 });
