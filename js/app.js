@@ -188,6 +188,5 @@ $(document).ready(function(){
 		
 	});
 
-	loadMapScript();
 	//initializeMap();
 });
