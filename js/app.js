@@ -70,6 +70,19 @@ function initializeMap() {
 
 $(document).ready(function(){
 
+	$('body').on('click','.contacts-text,.contact-us-btn',function(){
+		$('.overlay,#callback_form').fadeIn();
+	});
+
+	$('body').on('click','.close_btn',function(){
+		$('.overlay,#callback_form').fadeOut();
+	});
+
+	$('body').on('click','.overlay',function(event){
+		if (event.target.className != 'overlay') return;
+		$('.overlay,#callback_form').fadeOut();
+	});
+
 	$(document).scroll(function(){
 
 		var expLineTrigger = parseFloat($('.line:last .color').css('width'));
@@ -187,6 +200,4 @@ $(document).ready(function(){
 		}, 1500);
 		
 	});
-
-	//initializeMap();
 });
