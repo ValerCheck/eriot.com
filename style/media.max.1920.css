@@ -448,7 +448,7 @@
 }
 
 @-ms-viewport {
-  width: device-width;
+  width: auto !important;
 }
 
 @media only screen and (max-width: 425px) {
