@@ -447,12 +447,17 @@
 	}
 }
 
+@-ms-viewport {
+  width: device-width;
+}
+
 @media only screen and (max-width: 425px) {
 
 	.overlay #callback_form {
 	    width: 100%;
 	    box-sizing: border-box;
 	    height: 380px;
+	    margin-top: 50px;
 	}
 
 	#title .stat-info .stat-item {
