@@ -51,6 +51,7 @@ body {
 
 .overlay {
 	position: fixed;
+	position: -ms-device-fixed;
 	width: 100%;
 	height: 100%;
 	background-image: url(./../images/overlay.png);
@@ -958,21 +959,6 @@ p.title {
 	background-image: url(./../images/team-4.jpg);
 }
 
-/*.person:nth-child(4n+4) {
-	background-image: url(./../images/team-4.jpg);
-}*/
-
-
-.person:nth-child(5),
-.person:nth-child(8) {
-	background: none;
-}
-
-.person:nth-child(5) .title,
-.person:nth-child(8) .title {
-	background: none;
-}
-
 .team-persons {
 	font-size: 0;
 	text-align: justify;
@@ -1106,10 +1092,6 @@ p.title {
 .contacts-area {
 	width: 100%;
 	position: relative;
-}
-
-.location {
-	/*background: red;*/
 }
 
 a[href^="http://maps.google.com/maps"],
