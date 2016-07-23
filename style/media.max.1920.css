@@ -430,7 +430,6 @@
 	#title .content .background {
 		background: url('./../images/title-bg.png') center no-repeat !important;
 		background-size: cover !important;
-		/*height: inherit;*/
 	}
 
 	#contacts .content .background {

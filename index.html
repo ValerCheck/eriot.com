@@ -9,13 +9,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="icon" href="./images/logo.ico"/>
-<link type="text/css" rel="stylesheet" href="./style/media.max.1920.css"/>
-<link type="text/css" rel="stylesheet" href="./style/decoration.css"/>
+<link type="text/css" rel="stylesheet" href="./style/media.max.1920.min.css"/>
+<link type="text/css" rel="stylesheet" href="./style/decoration.min.css"/>
 <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
 <script src="./js/jquery.js"></script>
 <script src="./js/angular.min.js"></script>
 <script src="./js/app.js"></script>
-<script type="text/javascript" src="./js/LandingController.js"></script>
+<!--<script type="text/javascript" src="./js/LandingController.js"></script>-->
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIvfw1Tq-IaxvWF9QwWnHO7N_ZoC8cMCA&callback=initializeMap">
 </script>
@@ -286,8 +286,8 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 						<div>
 							<div class="color" id="1"></div>
 						</div>
-					</div>
-					<div class="medical-devices">
+					</div><!--
+					--><div class="medical-devices">
 						<div class="back-color"></div>
 						<div class="front-color"></div>
 					</div>
@@ -575,8 +575,8 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 						<h4>Our projects:</h4>
 						<div class="projects-list">
 							<div ng-repeat="t in [1,2,3,4]" class="project-item">
-								<img src="./images/projects-logo.png" class="item-logo"/> <!-- width="72px" height="72"/>-->
-								<img src="./images/text-logo.png" class="item-text" /> <!--height="30px" width="171px"/>-->
+								<img src="./images/projects-logo.png" class="item-logo"/>
+								<img src="./images/text-logo.png" class="item-text" />
 							</div>
 						</div>
 					</div>
