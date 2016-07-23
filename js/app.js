@@ -70,22 +70,12 @@ function initializeMap() {
 
 $(document).ready(function(){
 
-	$('body').on('click','.contacts-text,.contact-us-btn',function(){
-		$('.overlay,#callback_form').fadeIn();
-	});
-
-	$('body').on('click','.close_btn',function(){
-		$('.overlay,#callback_form').fadeOut();
-	});
-
-	$('body').on('click','.overlay',function(event){
-		if (event.target.className != 'overlay') return;
-		$('.overlay,#callback_form').fadeOut();
+	$('.block').toArray().forEach(function(el){
+		$(el).prepend('<input type="checkbox" class="show-menu" role="button"/>');
 	});
 
 	$(document).scroll(function(){
-
-		var expLineTrigger = parseFloat($('.line:last .color').css('width'));
+		var expLineTrigger = parseFloat($('.exp-line-area .line:last .color').css('width'));
 		var stepsTrigger = parseFloat($('.steps-figures li:first-child .step-color.front').css('width'));
 
 		if ($(document).scrollTop()+$(window).height() - 100 >= $('.steps-figures').offset().top &&
@@ -149,6 +139,53 @@ $(document).ready(function(){
 			if (!filling) fill(0);
 
 		}
+	});
+
+	$('body').on('click','.asideMenuBurger',function(){
+		
+		var checked = $('.show-menu[checked]');
+
+		var showMenu = $(this)
+		.parents('.block')
+		.children('.show-menu');
+
+		if (checked && checked[0] != showMenu[0]) checked.attr('checked',false);
+
+		showMenu.attr('checked',!showMenu.attr('checked'));
+		/*var parent = $(this).parent().toggle(function(){
+			var animObject = {
+				width : '280px'
+			};
+			if ($(window).width() <= 425) {
+				animObject.height = '100%';
+				parent.css({'position':'fixed'});
+			}
+			parent.animate(animObject);
+		},function(){
+			var animObject = {
+				width : '96px'
+			};
+			if ($(window).width() <= 425) {
+				animObject.width = '60px';
+			}
+			parent.animate(animObject);
+		});*/
+	});
+
+	$('body').on('click','.contacts-text,.contact-us-btn',function(){
+		$('.overlay,#callback_form').fadeIn();
+		$('body').addClass('modal-open');
+	});
+
+	$('body').on('click','.close_btn',function(){
+		$('.overlay,#callback_form').fadeOut();
+		$('body').removeClass('modal-open');
+	});
+
+	$('body').on('click','.overlay',function(event){
+		if (event.target.className != 'overlay') return;
+		$('.overlay,#callback_form').fadeOut();
+		$('body').removeClass('modal-open');
 	});
 
 	$('.step-slider').slick({
