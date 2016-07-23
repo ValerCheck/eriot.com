@@ -2,25 +2,25 @@ eriotApp.controller('LandingController',function($scope){
 
 	$scope.menu = [{
 		'title'	: ['Home'],
-		'link'	: '#'
+		'link'	: 'title'
 	},{
 		'title'	: ['Services'],
-		'link'	: '#', 
+		'link'	: 'services', 
 	},{
 		'title'	: ['Devices'],
-		'link'	: '#', 
+		'link'	: 'devices', 
 	},{
 		'title'	: ['Expertise'],
-		'link'	: '#'
+		'link'	: 'expertise'
 	},{
 		'title'	: ['Team'],
-		'link'	: '#'
+		'link'	: 'team'
 	},{
 		'title'	: ['Awards/Cases'],
-		'link'	: '#'
+		'link'	: 'awards-cases'
 	},{
 		'title'	: ['Contacts'],
-		'link'	: '#'
+		'link'	: 'contacts'
 	}];
 
 	$scope.devices = [{
@@ -95,5 +95,13 @@ eriotApp.controller('LandingController',function($scope){
 			description : ["First produced goods to be sold"]
 		}]
 	}];
+
+	$scope.scrollTo = function(id){
+		$('body').animate({
+			'scrollTop' : $('#'+id).offset().top
+		},2000);
+		var checked = $('.show-menu[checked]');
+		checked.attr('checked',false);
+	}
 
 });

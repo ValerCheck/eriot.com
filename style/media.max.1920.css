@@ -447,9 +447,11 @@
 	}
 }
 
-@-ms-viewport {
-  width: auto !important;
-}
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
 
 @media only screen and (max-width: 425px) {
 
@@ -491,6 +493,16 @@
 	.block nav.asideMenu {
 		width: 60px;
 	}
+
+	.show-menu:checked + .asideMenu {
+		position: fixed;
+		height: 100%;
+		z-index: 20;
+	}
+
+	/*.block .show-menu:checked + .asideMenu .mobile-menu {
+		height: 75%;
+	}*/
 
 	.asideMenu .menu-block-title span {
     	width: 60px;

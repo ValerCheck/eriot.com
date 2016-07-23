@@ -145,34 +145,21 @@ $(document).ready(function(){
 		
 		var checked = $('.show-menu[checked]');
 
-		var showMenu = $(this)
-		.parents('.block')
-		.children('.show-menu');
+		var parent = $(this).parents('.block');
+
+		var showMenu = parent.children('.show-menu');
 
 		if (checked && checked[0] != showMenu[0]) checked.attr('checked',false);
 
 		showMenu.attr('checked',!showMenu.attr('checked'));
-		/*var parent = $(this).parent().toggle(function(){
-			var animObject = {
-				width : '280px'
-			};
-			if ($(window).width() <= 425) {
-				animObject.height = '100%';
-				parent.css({'position':'fixed'});
-			}
-			parent.animate(animObject);
-		},function(){
-			var animObject = {
-				width : '96px'
-			};
-			if ($(window).width() <= 425) {
-				animObject.width = '60px';
-			}
-			parent.animate(animObject);
-		});*/
+
+		if (showMenu.attr('checked'))
+			$('body').animate({
+				'scrollTop' : parent.offset().top
+			});
 	});
 
-	$('body').on('click','.contacts-text,.contact-us-btn',function(){
+	$('body').on('click','.contacts-text,.contact-us-btn, .person:last-child',function(){
 		$('.overlay,#callback_form').fadeIn();
 		$('body').addClass('modal-open');
 	});

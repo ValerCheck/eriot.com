@@ -2,8 +2,15 @@
 <div class="menu-block-title">
 	<span>{{title}}</span>
 </div>
+<div class="mobile-menu">
+	<div class="mobile-menu-list">
+		<div class="item" ng-click="scrollTo(item.link)" ng-repeat="item in menu">
+			<a href="#/#{{item.link}}">{{item.title[0]}}</a>
+		</div>
+	</div>
+</div>
 <div class="asideMenuBurger">
 	<div class="burgerImg">
-		<div class="line enable-transition" ng-repeat="line in [1,2,3]"></div>
+		<div class="line" ng-repeat="line in [1,2,3]"></div>
 	</div>
 </div>

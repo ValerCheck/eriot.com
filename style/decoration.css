@@ -59,6 +59,10 @@ body {
 	z-index: 100;
 }
 
+.mobile-menu {
+	display: none;
+}
+
 body.modal-open .overlay {
 	overflow-y: scroll;
 }
@@ -98,6 +102,16 @@ body.modal-open .overlay {
 	display: none;
 }
 
+.mobile-menu-list .item a {
+	text-transform: uppercase;
+	font-family: 'Roboto Condensed';
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 32px;
+	text-decoration: none;
+	color: black;
+}
+
 .show-menu:checked + .asideMenu {
 	width: 280px;
 }
@@ -109,6 +123,24 @@ body.modal-open .overlay {
 .show-menu:checked + .asideMenu .line:nth-child(1),
 .show-menu:checked + .asideMenu .line:nth-child(3) {
 	margin: 0;
+}
+
+.show-menu:checked + .asideMenu .menu-block-title {
+	display: none;
+}
+
+.mobile-menu-list {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	padding-left: 40px;
+}
+
+.show-menu:checked + .asideMenu .mobile-menu {
+	display: block;
+	width: 100%;
+    height: 75%;
+    position: absolute;
 }
 
 .show-menu:checked + .asideMenu .line:nth-child(1) {
@@ -894,6 +926,14 @@ p.title {
 	font-weight: bold;
 }
 
+.person:last-child:hover {
+	cursor: pointer;
+}
+
+.person:last-child:hover .call-to-action {
+	color: ghostwhite;
+}
+
 .person:last-child {
 	background: #fce35d none !important;
 	vertical-align: top;
@@ -1482,7 +1522,8 @@ a[href^="https://maps.google.com/maps"]
 }
 
 .menu-block-title:before,
-.menu-block-title:after {
+.menu-block-title:after,
+.mobile-menu:before {
 	content:'';
 	width: 0px;
 	display:inline-block;

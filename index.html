@@ -6,7 +6,8 @@
 <title>Engineeriot</title>
 <meta charset="utf-8">
 
-<meta name="viewport" content="width=device-width"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="icon" href="./images/logo.ico"/>
 <link type="text/css" rel="stylesheet" href="./style/media.max.1920.css"/>
 <link type="text/css" rel="stylesheet" href="./style/decoration.css"/>
@@ -18,6 +19,22 @@
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIvfw1Tq-IaxvWF9QwWnHO7N_ZoC8cMCA&callback=initializeMap">
 </script>
+
+<script>
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement("style");
+    msViewportStyle.appendChild(
+        document.createTextNode(
+            "@-ms-viewport{width:auto!important}"
+        )
+    );
+    document.getElementsByTagName("head")[0].
+        appendChild(msViewportStyle);
+}
+</script>
+
+<base href=" "/>
+
 </head>
 <body ng-view ng-controller='LandingController'>
 
@@ -437,7 +454,7 @@
 					 		</div>
 					 	</div>
 					 	<div class="person">
-					 		<div class="call-to-action">
+					 		<div class="call-to-action enable-transition">
 					 			<span>I want to</span>
 					 			<span>Work with</span>
 					 			<span>this team!</span>
