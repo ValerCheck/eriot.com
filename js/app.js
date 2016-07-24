@@ -225,15 +225,25 @@ $(document).ready(function(){
 
 	$(document).on('submit','#message_form',function(){
 		var form = $(this);
-		$.post('sendEmail.php',{
-			type 	: 'message',
-			name 	: form.children('[name=name]').val(),
-			phone 	: form.children('[phone=phone]').val(),
-			email 	: form.children('[name=email]').val(),
-			message : form.children('[name=message]').val()
-		},function(data){
+		$.ajax({
+			type : 'POST',
+			url  : 'sendEmail.php',
+			data : {
+				type 	: 'message',
+				name 	: form.children('[name=name]').val(),
+				phone 	: form.children('[phone=phone]').val(),
+				email 	: form.children('[name=email]').val(),
+				message : form.children('[name=message]').val()
+			},
+			beforeSend : function(){
+				form.children('.message_loader').fadeIn();
+				form.children('[type=submit]').hide();
+			}
+		}).done(function(data){
 			console.log(data);
 			form[0].reset();
+			form.children('.message_loader').fadeOut();
+			form.children('[type=submit]').show();
 		});
 	});
 

@@ -61,7 +61,8 @@ body {
 }
 
 .overlay_loader,
-.details_loader {
+.details_loader,
+.message_loader {
 	display: none;
     text-align: center;
     z-index: 100;
@@ -74,7 +75,8 @@ body {
 	background-color: #2d4d61;
 }
 
-.details_loader {
+.details_loader,
+.message_loader {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -86,6 +88,12 @@ body {
     height: 90%;
     text-align: center;
     background-color: #ffde2b;
+}
+
+.message_loader {
+	padding-top: 20%;
+	height: 80%;
+	background-color: #122b3a;
 }
 
 .glyphicon-refresh-animate {
@@ -1837,6 +1845,10 @@ a[href^="https://maps.google.com/maps"]
 	left: 60px;
 	top:0;
 	width: 100%;
+}
+
+form {
+	position: relative;
 }
 
 .contacts-form input,
