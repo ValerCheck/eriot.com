@@ -60,6 +60,30 @@ body {
 	z-index: 100;
 }
 
+.overlay_loader {
+	display: none;
+    text-align: center;
+    z-index: 100;
+    margin-top: 20%;
+    color: white;
+    font-size: 50px;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin 1.7s infinite linear;
+    -webkit-animation: spin2 1.7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
 .mobile-menu {
 	display: none;
 }
@@ -424,6 +448,11 @@ body.modal-open {
 	z-index: 3;
 	font-family: 'Roboto Condensed';
 	font-size: 20px;
+}
+
+.contacts-text[type=submit] {
+	display: block;
+	cursor: pointer;
 }
 
 .contacts-text {
@@ -1137,6 +1166,14 @@ a[href^="https://maps.google.com/maps"]
 	padding: 40px 100px;
 }
 
+.address__content .contacts-form [type=submit] {
+	padding: 0 20px 0 0;
+    border: 0;
+    margin: 0;
+    display: inline;
+    width: initial;
+}
+
 .clearfix:before,
 .clearfix:after {
 	content: '';
@@ -1256,6 +1293,14 @@ a[href^="https://maps.google.com/maps"]
 	margin: 0;
 	padding: 0;
 	height: 328px;
+}
+
+.expertise-blocks .block-pair .item [type=submit] {
+	display: inline;
+    border: 0;
+    width: initial;
+    padding: 0;
+    padding-right: 20px;
 }
 
 .block-pair {

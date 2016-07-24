@@ -12,6 +12,7 @@
 <link type="text/css" rel="stylesheet" href="./style/media.max.1920.css"/>
 <link type="text/css" rel="stylesheet" href="./style/decoration.css"/>
 <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css"/>
 <script src="./js/jquery.js"></script>
 <script src="./js/angular.min.js"></script>
 <script src="./js/app.js"></script>
@@ -39,16 +40,17 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <body ng-view ng-controller='LandingController'>
 
 <div class="overlay">
+	<div class="overlay_loader"><span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span></div>
 	<form id="callback_form">
 		<p>Callback Request</p>
 		<div class="close_btn">
 			<div class="close"></div>
 		</div>
 		<div class="input_content">
-			<input type="text" placeholder="Name" required/>
-			<input type="text" placeholder="Name company" required/>
-			<input type="text" placeholder="Phone" required/>
-			<input type="email" placeholder="Email" required/>
+			<input type="text" name="name" placeholder="Name" required/>
+			<input type="text" name="company" placeholder="Company name" required/>
+			<input type="text" name="phone" placeholder="Phone" required/>
+			<input type="email" name="email" placeholder="Email" required/>
 			<input type="submit" value="Send"/>
 		</div>
 	</form>
@@ -383,9 +385,9 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 						<div class="item left"></div>
 						<div class="item left detailed">
 							<h3 class="dark">Get detailed information</h3>
-							<form>
-								<input type="text" class="black" placeholder="Your email"></input>
-								<a class="contacts-text black" href="#">Send</a>
+							<form class="get-details-form">
+								<input type="email" name="email" class="black" placeholder="Your email" required/>
+								<input type="submit" class="contacts-text black" value="Send"/>
 							</form>
 						</div>
 					</div><!--
@@ -399,9 +401,9 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 					--><div class="block-pair float-area">
 						<div class="item right detailed light">
 							<h3>Get detailed information</h3>
-							<form>
-								<input class="white" type="text" placeholder="Your email"></input>
-								<a class="contacts-text white" href="#">Send</a>
+							<form class="get-details-form">
+								<input class="white" name="email" type="email" placeholder="Your email" required></input>
+								<input type="submit" class="contacts-text white" value="Send"/>
 							</form>
 						</div>
 						<div class="item right black">
@@ -560,12 +562,13 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 									</div>
 								</div>
 								<h4 class="write-us">Write us</h4>
-								<form class="contacts-form">
-									<input class="white" type="text" placeholder="Name"></input>
-									<input class="white" type="text" placeholder="Phone"></input>
-									<input class="white" type="text" placeholder="Email"></input>
-									<textarea class="white" placeholder="What do you want to ask us?"></textarea>
-									<a class="contacts-text white" href="#">Send</a>
+								<form class="contacts-form" id="message_form">
+									<input class="white" name="name" type="text" placeholder="Name" required></input>
+									<input class="white" name="phone" type="text" placeholder="Phone" required></input>
+									<input class="white" name="email" type="email" placeholder="Email" required></input>
+									<textarea class="white" name="message" placeholder="What do you want to ask us?" required></textarea>
+									<!--<a class="contacts-text white" href="#">Send</a>-->
+									<input type="submit" class="contacts-text white" value="Send"/>
 								</form>
 							</div>
 						</div>

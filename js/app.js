@@ -178,6 +178,57 @@ function initializeMap() {
 
 $(document).ready(function(){
 
+	$(document).on('submit','#callback_form',function(){
+		var fields = $(this).children('.input_content');
+		var form = $(this);
+		$.ajax({
+			type : 'POST',
+			url  : 'sendEmail.php',
+			data : {
+				type 	: 'contact',
+				name 	: fields.children('[name=name]').val(),
+				company : fields.children('[name=company]').val(),
+				phone 	: fields.children('[phone=phone]').val(),
+				email 	: fields.children('[name=email]').val()	
+			},
+			beforeSend : function(){
+				form.hide();
+				$('.overlay_loader').show();
+			}
+		}).done(function(data){
+			$('.overlay_loader').hide();
+			$('.overlay,#callback_form').fadeOut();
+			$('body').removeClass('modal-open');
+			console.log(data);
+			form[0].reset();
+		});
+	});
+
+	$(document).on('submit','.get-details-form',function(){
+		var form = $(this);
+		$.post('sendEmail.php',{
+			type 	: 'get-details',
+			email 	: form.children('[name=email]').val()
+		},function(data){
+			console.log(data);
+			form[0].reset();
+		});
+	});
+
+	$(document).on('submit','#message_form',function(){
+		var form = $(this);
+		$.post('sendEmail.php',{
+			type 	: 'message',
+			name 	: form.children('[name=name]').val(),
+			phone 	: form.children('[phone=phone]').val(),
+			email 	: form.children('[name=email]').val(),
+			message : form.children('[name=message]').val()
+		},function(data){
+			console.log(data);
+			form[0].reset();
+		});
+	});
+
 	$('.block').toArray().forEach(function(el){
 		$(el).prepend('<input type="checkbox" class="show-menu" role="button"/>');
 	});
@@ -267,7 +318,7 @@ $(document).ready(function(){
 			});
 	});
 
-	$('body').on('click','.contacts-text,.contact-us-btn, .person:last-child',function(){
+	$('body').on('click','#title .contacts-text,.contact-us-btn, .person:last-child',function(){
 		$('.overlay,#callback_form').fadeIn();
 		$('body').addClass('modal-open');
 	});
