@@ -4,16 +4,40 @@
 		"selected_items":
 		[
 			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"f",
+				"ffde2b"
+			],
+			[
+				"callback",
+				"callback_form"
+			],
+			[
+				"background-",
+				"background-image"
+			],
+			[
+				"load",
+				"loadMapScript"
+			],
+			[
+				"sele",
+				"selector"
+			],
+			[
 				"margin",
 				"margin-bottom"
 			],
 			[
 				"max-",
 				"max-width"
-			],
-			[
-				"text-",
-				"text-align"
 			],
 			[
 				"custom",
@@ -100,10 +124,6 @@
 				"margin-bottom"
 			],
 			[
-				"f",
-				"feeb37"
-			],
-			[
 				"of",
 				"offset	.offset()"
 			],
@@ -154,10 +174,6 @@
 			[
 				"json",
 				"json_encode"
-			],
-			[
-				"text",
-				"textarea	Tag"
 			],
 			[
 				"time",
@@ -360,10 +376,6 @@
 				"mouseleave	.mouseleave()"
 			],
 			[
-				"background-",
-				"background-size"
-			],
-			[
 				"had",
 				"headerFlex"
 			],
@@ -502,18 +514,6 @@
 			[
 				"ng",
 				"ng-model"
-			],
-			[
-				"remove",
-				"removeClass	.removeClass()"
-			],
-			[
-				"update",
-				"updateOnClick"
-			],
-			[
-				"key",
-				"keypress	.keypress()"
 			]
 		]
 	},
@@ -523,23 +523,47 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 14864,
+				"buffer_size": 17311,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "js/app.js",
+			"file": "bootstrap/css/bootstrap.css",
 			"settings":
 			{
-				"buffer_size": 4417,
+				"buffer_size": 17618,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sendEmail.php",
+			"settings":
+			{
+				"buffer_size": 1152,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/asideMenu.html",
+			"settings":
+			{
+				"buffer_size": 451,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "js/LandingController.js",
 			"settings":
 			{
-				"buffer_size": 2484,
+				"buffer_size": 2715,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 10722,
 				"line_ending": "Windows"
 			}
 		},
@@ -547,7 +571,7 @@
 			"file": "style/decoration.css",
 			"settings":
 			{
-				"buffer_size": 25921,
+				"buffer_size": 30891,
 				"line_ending": "Windows"
 			}
 		},
@@ -555,7 +579,7 @@
 			"file": "style/media.max.1920.css",
 			"settings":
 			{
-				"buffer_size": 8468,
+				"buffer_size": 17557,
 				"line_ending": "Windows"
 			}
 		}
@@ -567,10 +591,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 173.0,
-		"last_filter": "wor",
+		"height": 104.0,
+		"last_filter": "set syntax: css",
 		"selected_items":
 		[
+			[
+				"set syntax: css",
+				"Set Syntax: CSS"
+			],
 			[
 				"wor",
 				"Word Wrap: Toggle"
@@ -586,10 +614,6 @@
 			[
 				"set syntax: php",
 				"Set Syntax: PHP"
-			],
-			[
-				"set syntax: css",
-				"Set Syntax: CSS"
 			],
 			[
 				"set syntax:PHP",
@@ -692,7 +716,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 493.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -715,11 +739,17 @@
 	"expanded_folders":
 	[
 		"/C/xampp/htdocs/eriot",
-		"/C/xampp/htdocs/eriot/js",
-		"/C/xampp/htdocs/eriot/templates"
+		"/C/xampp/htdocs/eriot/bootstrap",
+		"/C/xampp/htdocs/eriot/bootstrap/css",
+		"/C/xampp/htdocs/eriot/images"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/eriot/bootstrap/css/bootstrap.css",
+		"/C/xampp/htdocs/eriot/style/media.max.1920.min.css",
+		"/C/xampp/htdocs/eriot/style/decoration.min.css",
+		"/C/xampp/htdocs/eriot/style/decoration.css",
+		"/C/xampp/htdocs/eriot/js/LandingController.js",
 		"/C/xampp/htdocs/eriot/js/app.js",
 		"/C/xampp/htdocs/eriot/templates/asideMenu.html",
 		"/C/xampp/htdocs/8relocate/admin/blog/delete.php",
@@ -842,12 +872,7 @@
 		"/E/MyProjects/Web/dedicateteam.com/styles/no-flex-style.css",
 		"/E/MyProjects/Web/dedicateteam.com/styles/no-flex-mobile-style.css",
 		"/E/MyProjects/Web/dedicateteam.com/styles/no-flex-portfolio-mobile-style.css",
-		"/E/MyProjects/Web/dedicateteam.com/styles/no-flex-portfolio-style.css",
-		"/C/xampp/htdocs/dedicateteam.com/composer.json",
-		"/E/HerokuTest/php-getting-started/composer.json",
-		"/E/MyProjects/Web/dotnet-cv/CVStyle.css",
-		"/E/MyProjects/Web/dotnet-cv/index.html",
-		"/C/Users/kleva_000/Desktop/supersized/buildinternet-supersized-d6ed282/slideshow/demo.html"
+		"/E/MyProjects/Web/dedicateteam.com/styles/no-flex-portfolio-style.css"
 	],
 	"find":
 	{
@@ -866,6 +891,54 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"contacts-form",
+			"contacts-text",
+			"form",
+			"	\n",
+			".address__content .contacts-form input",
+			"form input",
+			"expertise-item",
+			"display: table",
+			"table",
+			"table-cell",
+			"medical-devices",
+			";\n",
+			".address__content .contacts-form input:nth-child(1)",
+			"width: 49",
+			"input[type",
+			"input",
+			"person",
+			"mobile-menu-list",
+			" .item",
+			".upper",
+			"upper",
+			".upper",
+			".uppercase",
+			"uppercase",
+			"mobile-menu",
+			"menu-block-title",
+			"mobile-menu",
+			"callback_form",
+			"form",
+			"+ ",
+			"+",
+			"asideMenu",
+			"z-index: 10",
+			"urgerImg",
+			"urger",
+			".left",
+			".clear",
+			"clear",
+			".location",
+			"initializeMap",
+			"Map",
+			" 50px",
+			"#1",
+			"expertise-item:nth",
+			"expertise-item",
+			"slider-wrapper",
+			".block#services .content-wrapper section {\n    padding-top: 15%;\n}",
+			"#devices .content",
 			":not",
 			"line)",
 			"img",
@@ -945,60 +1018,12 @@
 			".line",
 			" 2px",
 			"2px",
-			"#eee",
-			"content-wrapper",
-			"expertise-line.items",
-			"exp-line-area",
-			"#eee",
-			"exp-line-",
-			"background-color: #eee",
-			"top: 80px",
-			"section-su",
-			":hover",
-			"devices",
-			"#devices ",
-			"float",
-			".block",
-			"block",
-			"services-prev",
-			"button",
-			"step-back",
-			"{\n",
-			"section-title",
-			"content-wrapper",
-			"section-title",
-			":before",
-			"position: abso",
-			"stat-item div",
-			"stat-item",
-			"mark-word",
-			"stat-item",
-			"vertical-align:",
-			"stat-item",
-			"vertical",
-			"section",
-			"#title",
-			"idea-title",
-			"top-block",
-			"idea-t",
-			"contacts-text",
-			"idea-title",
-			"'datauri",
-			"datauri",
-			"#block1, #block3",
-			".#block1, #block3",
-			".contactsFooter",
-			".contactsFooter:before,\n .contactsFooter:after",
-			".call",
-			"span.call",
-			"call",
-			"call showwind",
-			"save-button"
+			"#eee"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
 			"selectedArticle",
@@ -1043,7 +1068,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -1052,15 +1077,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14864,
+						"buffer_size": 17311,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10855,
-								10855
+								2077,
+								2077
 							]
 						],
 						"settings":
@@ -1069,37 +1094,38 @@
 							"translate_tabs_to_spaces": false,
 							"word_wrap": false
 						},
-						"translation.x": 81.0,
-						"translation.y": 4890.0,
+						"translation.x": 0.0,
+						"translation.y": 411.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "js/app.js",
+					"file": "bootstrap/css/bootstrap.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4417,
+						"buffer_size": 17618,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1325,
-								1325
+								16642,
+								16642
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 855.0,
+						"translation.y": 14253.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -1107,19 +1133,76 @@
 				},
 				{
 					"buffer": 2,
-					"file": "js/LandingController.js",
+					"file": "sendEmail.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2484,
+						"buffer_size": 1152,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								854,
-								855
+								967,
+								967
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/asideMenu.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/LandingController.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2715,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2715
 							]
 						],
 						"settings":
@@ -1128,57 +1211,85 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1215.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
+					"file": "js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4669,
+								4669
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2780.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "style/decoration.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 25921,
+						"buffer_size": 30891,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								10030,
-								10030
+								1297,
+								1297
 							]
 						],
 						"settings":
 						{
-							"history_list_is_closing": true,
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 8500.0,
+						"translation.y": 980.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
 					"file": "style/media.max.1920.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8468,
+						"buffer_size": 17557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								652,
-								652
+								10340,
+								10340
 							]
 						],
 						"settings":
@@ -1187,10 +1298,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 385.0,
+						"translation.y": 8905.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

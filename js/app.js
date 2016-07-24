@@ -188,7 +188,7 @@ $(document).ready(function(){
 				type 	: 'contact',
 				name 	: fields.children('[name=name]').val(),
 				company : fields.children('[name=company]').val(),
-				phone 	: fields.children('[phone=phone]').val(),
+				phone 	: fields.children('[name=phone]').val(),
 				email 	: fields.children('[name=email]').val()	
 			},
 			beforeSend : function(){
@@ -239,7 +239,7 @@ $(document).ready(function(){
 			data : {
 				type 	: 'message',
 				name 	: form.children('[name=name]').val(),
-				phone 	: form.children('[phone=phone]').val(),
+				phone 	: form.children('[name=phone]').val(),
 				email 	: form.children('[name=email]').val(),
 				message : form.children('[name=message]').val()
 			},
