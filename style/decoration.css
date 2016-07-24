@@ -669,8 +669,8 @@ body.modal-open {
 	z-index: 10;
 }
 
-.expertise-item > div .line,
 .expertise-item > div .line {
+	z-index: -1;
 	display: table-cell;
 	background-color: transparent;
 }
@@ -692,7 +692,8 @@ body.modal-open {
 }
 
 .expertise-item > div > div:not(.line) {
-	display: table-cell;
+	/*display: table-cell;*/
+	display: inline-block;
 	min-width: 128px;
 	width: 127px;
 	height: 100%;
@@ -710,7 +711,8 @@ body.modal-open {
     z-index: -1;
 }
 
-.expertise-item > div .front-color {
+.expertise-item > div .front-color,
+.expertise-item > td .front-color {
 	position: absolute;
 	top: 1%;
 	height: 98%;
@@ -727,6 +729,19 @@ body.modal-open {
     overflow: hidden;
     display: block;
     float: none;
+}
+
+.expertise-item:nth-child(2) {
+	z-index: 4;
+}
+.expertise-item:nth-child(5) {
+	z-index: 3;	
+}
+.expertise-item:nth-child(8) {
+	z-index: 2;
+}
+.expertise-item:nth-child(11) {
+	z-index: 1;
 }
 
 .expertise-item {
