@@ -60,13 +60,32 @@ body {
 	z-index: 100;
 }
 
-.overlay_loader {
+.overlay_loader,
+.details_loader {
 	display: none;
     text-align: center;
     z-index: 100;
     margin-top: 20%;
     color: white;
     font-size: 50px;
+}
+
+.details_loader.blue {
+	background-color: #2d4d61;
+}
+
+.details_loader {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	margin-top: 0;
+	text-align: center;
+    padding-top: 10%;
+    left: -1%;
+    width: 102%;
+    height: 90%;
+    text-align: center;
+    background-color: #ffde2b;
 }
 
 .glyphicon-refresh-animate {
@@ -1354,12 +1373,19 @@ a[href^="https://maps.google.com/maps"]
 	padding-top: 90px;
 }
 
-.block-pair p,
-.block-pair form {
+.block-pair p {
 	font-size: 15px;
 	text-align: center;
 	padding: 0 40px;
 	margin: 0;
+}
+
+.block-pair form {
+	position: relative;
+	font-size: 15px;
+	text-align: center;
+	margin: 0 40px;
+	/*margin: 0;*/
 }
 
 .block-pair form:after {

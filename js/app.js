@@ -206,12 +206,20 @@ $(document).ready(function(){
 
 	$(document).on('submit','.get-details-form',function(){
 		var form = $(this);
-		$.post('sendEmail.php',{
-			type 	: 'get-details',
-			email 	: form.children('[name=email]').val()
-		},function(data){
+		$.ajax({
+			type : 'POST',
+			url  : 'sendEmail.php',
+			data : {
+				type 	: 'get-details',
+				email 	: form.children('[name=email]').val()
+			},
+			beforeSend : function(){
+				form.children('.details_loader').fadeIn();
+			}
+		}).done(function(data){
 			console.log(data);
 			form[0].reset();
+			form.children('.details_loader').fadeOut();
 		});
 	});
 
